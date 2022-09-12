@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_checkout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_checkout"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="?actionBarSize"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_checkout"
+                tools:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/container_cart_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_margin_20"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/cart_empty_image_size"
+                    android:layout_height="@dimen/cart_empty_image_size"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/shop_background_bottom" />
+
+                <TextView
+                    style="@style/TextView.Black.Big.Bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/activity_margin_10"
+                    android:text="@string/your_cart_is_empty" />
+
+                <Button
+                    android:id="@+id/btn_shop_now"
+                    style="@style/Button.Black"
+                    android:layout_marginTop="@dimen/activity_margin_10"
+                    android:text="@string/shop_now" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/container_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/activity_margin_10"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/subtotal" />
+
+            <TextView
+                android:id="@+id/tv_sub_total"
+                style="@style/TextView.Black.Small"
+                android:text="@string/subtotal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/tax" />
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:text="@string/dummy_price_tax" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/total" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                style="@style/TextView.Black.Small"
+                android:text="@string/subtotal" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_checkout"
+            style="@style/Button.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:text="@string/checkout" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

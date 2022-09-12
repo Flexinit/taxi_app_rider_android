@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/container_with_white_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_common" />
+
+        <TextView
+
+            style="@style/TextView.Grey.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_20"
+            android:text="@string/favorites" />
+
+        <TextView
+            style="@style/TextView.Black.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_20"
+            android:drawableStart="@drawable/ic_home_solid"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/add_new_home" />
+
+
+        <TextView
+            style="@style/TextView.Black.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_20"
+            android:drawableStart="@drawable/ic_work_briefcase"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/add_new_work" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_min_height"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:layout_marginBottom="@dimen/activity_margin_10"
+            android:background="@color/colorSeparator" />
+
+        <com.quawlebs.drupp.util.BaseRecyclerView
+            android:id="@+id/rv_saved_locations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextView.Grey.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/add_a_favorite_location" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:tint="@color/colorWhite"
+        app:backgroundTint="@color/colorBlack"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add" />
+</RelativeLayout>

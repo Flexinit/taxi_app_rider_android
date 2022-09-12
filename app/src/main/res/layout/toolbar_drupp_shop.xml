@@ -1,0 +1,111 @@
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_app_bar_height"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:elevation="@dimen/toolbar_elevation"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_back_nav" />
+
+            <TextView
+                style="@style/TextView.White.Big.Bold"
+                android:layout_centerInParent="true"
+                android:text="@string/drupp_shop" />
+
+
+            <ImageButton
+                android:id="@+id/emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/activity_margin_10"
+                android:layout_toStartOf="@id/iv_cart"
+                android:adjustViewBounds="true"
+                android:background="@color/colorBlack"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_alarm_white" />
+
+            <ImageButton
+                android:id="@+id/iv_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/activity_margin_10"
+                android:adjustViewBounds="true"
+                android:background="@color/colorBlack"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_shopping_cart" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_margin_10"
+        android:layout_marginEnd="@dimen/activity_margin_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/spinner_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/activity_margin_10"
+            android:layout_weight="0.75"
+            android:background="@color/colorWhite">
+
+            <Spinner
+                android:id="@+id/spinner_categories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_search_product"
+            style="@style/EditTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/iv_search_product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.27"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_search_shop" />
+    </LinearLayout>
+
+
+</com.google.android.material.appbar.AppBarLayout>
+

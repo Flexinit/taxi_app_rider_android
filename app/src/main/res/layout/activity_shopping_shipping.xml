@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/african_drupp_pattern"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_checkout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/pure_white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/first_name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/last_name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/street" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/city" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/country" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/state" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/zip_postal_code" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/phone_number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bordered" />
+
+            <Space style="@style/SpaceMiniTrim" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Grey.Medium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/original_price" />
+
+                <TextView
+                    style="@style/TextView.Grey.Medium"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Grey.Medium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/discount_" />
+
+                <TextView
+                    style="@style/TextView.Grey.Medium"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+            <Space style="@style/SpaceMini" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Black.Medium.Bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_price" />
+
+                <TextView
+                    style="@style/TextView.Black.Medium.Bold"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+            <Button
+                style="@style/Button.Black"
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:text="@string/cont" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

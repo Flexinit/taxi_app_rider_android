@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map_pattern">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:foreground="@color/colorBlack" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/toolbar_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large">
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/kindly_rate_the_ride" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_driver_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_profile" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/rating_bar"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:isIndicator="false"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Grey.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/is_driver_courteous" />
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switch_courteous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorBorder="@color/colorDarkGrey"
+                    app:colorOff="@color/colorLightGrey"
+                    app:colorOn="@color/colorBlack"
+                    app:on="false"
+                    app:textOff="@string/yes"
+                    app:textOn="@string/no" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Grey.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/is_vehicle_clean" />
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switch_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorBorder="@color/colorDarkGrey"
+                    app:colorOff="@color/colorLightGrey"
+                    app:colorOn="@color/colorBlack"
+                    app:on="false"
+                    app:textOff="@string/yes"
+                    app:textOn="@string/no" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/is_driver_careful"
+                    android:textSize="14sp" />
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switch_careful"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:colorBorder="@color/colorDarkGrey"
+                    app:colorOff="@color/colorLightGrey"
+                    app:colorOn="@color/colorBlack"
+                    app:on="false"
+                    app:textOff="@string/yes"
+                    app:textOn="@string/no" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_comment"
+                style="@style/EditTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_x_large"
+                android:gravity="top"
+                android:hint="@string/comment_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxLines="4"
+                android:minHeight="@dimen/edit_txt_comment_height"
+                android:padding="@dimen/padding_small" />
+
+
+            <Button
+                android:id="@+id/btn_done"
+                style="@style/Button.Black.Round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_pattern_height"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/african_drupp_pattern" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

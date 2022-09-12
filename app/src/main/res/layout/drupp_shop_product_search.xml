@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_address" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:layout_marginRight="@dimen/activity_margin_10"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_product_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border_with_red"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawableEnd="@drawable/ic_clear_black_24dp"
+                android:drawableRight="@drawable/ic_clear_black_24dp"
+                android:drawablePadding="@dimen/activity_margin_10"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="@dimen/activity_margin_10"
+                android:paddingRight="@dimen/activity_margin_10"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/switcher_place_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/powered_by_drupp"
+            android:layout_below="@+id/search_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_margin_10"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <TextView
+                    android:id="@+id/tv_sorry_try_again"
+                    style="@style/TextView.Black.Small"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/ic_sad"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/sorry_unable_to_connect"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/drupp_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/african_drupp_pattern" />
+    </RelativeLayout>
+</LinearLayout>

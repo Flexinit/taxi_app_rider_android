@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.quawlebs.drupp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:remove="android:maxSdkVersion" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:remove="android:maxSdkVersion" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name=" android.hardware.location.gps" />
+
+    <uses-permission android:name="android.perrimission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".DruppApp"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity android:name=".view.ui.PostRideActivity"></activity>
+        <activity
+            android:name=".view.ui.TripHistoryQuery"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".view.ui.RateCoRiders" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".view.ui.scheduledRides.DriverPostedRidesEdit" />
+        <activity
+            android:name=".view.ui.scheduledRides.UserPostedRidesEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".view.ui.scheduledRides.DriverPostedRideSingelView" />
+        <activity android:name=".view.ui.scheduledRides.ScheduledRidesActivity" />
+        <activity android:name=".view.ui.scheduledRides.UserPostedRideSingelView" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".view.ui.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".view.ui.NavDrawer" />
+        <activity
+            android:name=".view.ui.BrowseProducts"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.TripHistoryFinal"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.history.RideHistory"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.PaymentOptions"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.CancelRideReason"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.RideStartActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.SupportActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.CardActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.SupportMessageActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.RideFor"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.RateDriverActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.TermsConditionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.PrivacyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.RideOnActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.news.NewsFeedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.NewsDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.ShoppingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.UserSettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.UserPreferencesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.ride.RideActivity"
+            android:label="@string/title_activity_ride_"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.ui.VerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".login.StartUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.BillActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.EndRideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.ui.UserRegistrationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.ReferralActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.notifications.SingleNotificationActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.ReferralHistory"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.LiveLocationActivity"
+            android:launchMode="singleTask">
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/filter_view_live_location">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "https://api.qualwebs.com/drupp/api/user/share-live-location” -->
+                <data
+                    android:host="api.qualwebs.com"
+                    android:pathPrefix="/drupp/api/user/open-shared-app"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/filter_view_live_location">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "https://api.qualwebs.com/drupp/api/user/share-live-location” -->
+                <data
+                    android:host="api.qualwebs.com"
+                    android:pathPrefix="/drupp/api/user/open-shared-app"
+                    android:scheme="http" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/filter_view_live_location">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "https://api.qualwebs.com/drupp/api/user/share-live-location” -->
+                <data
+                    android:host="qualwebs"
+                    android:path="/"
+                    android:scheme="druppapp" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".view.ui.payments.PaymentCashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ui.shopping.ShoppingHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ui.search.ActivityUserAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ui.payments.PaymentViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ui.payments.ActivityAddMoney"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ui.payments.MainPaymentActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.chat.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ui.BusChooserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.BusRidesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ui.shopping.ShopMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.SingleProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.CheckOutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.SearchFilterProductsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.ShippingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.OrderTrackingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.shopping.MyOrdersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.news.NewsFeedMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.payments.BankPaymentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.busbooking.BusBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.ride.BottomSheetRideActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".view.ui.search.PlaceSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+        <activity
+            android:name=".view.ui.favorites.SavedLocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" /> <!-- optional (needed if default theme has no action bar) -->
+        <service
+            android:name=".service.FetchAddressIntentService"
+            android:exported="false" />
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.NotificationService" />
+        <service android:name=".service.LocationTrackingService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="co.paystack.android.PublicKey"
+            android:value="pk_live_ae20a06203653517c3923b557f272526e4a55045" />
+    </application>
+
+</manifest>

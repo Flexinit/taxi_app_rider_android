@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pure_white">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/news_icon"
+            android:layout_margin="10dp"
+            android:id="@+id/image_news_icon"/>
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:text="@string/news_headline"
+            android:layout_toRightOf="@id/image_news_icon"
+            android:id="@+id/tvNews_headline"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:id="@+id/tvNewsPaperName"
+            android:text="Times of india"
+            android:textColor="@color/dark_grey"
+            android:layout_toRightOf="@id/image_news_icon"
+            android:layout_below="@id/tvNews_headline"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:text="-"
+            android:textColor="@color/dark_grey"
+            android:layout_toRightOf="@id/tvNewsPaperName"
+            android:layout_below="@id/tvNews_headline"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:id="@+id/tvdash"
+            android:text="-"
+            android:textColor="@color/dark_grey"
+            android:layout_toRightOf="@id/tvNewsPaperName"
+            android:layout_below="@id/tvNews_headline"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            style="@style/TextView_style_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 hours"
+            android:textColor="@color/dark_grey"
+            android:layout_toRightOf="@id/tvdash"
+            android:layout_below="@id/tvNews_headline"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="3dp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

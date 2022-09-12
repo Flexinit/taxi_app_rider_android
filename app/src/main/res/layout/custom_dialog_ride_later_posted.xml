@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRide_Cancel"
+            style="@style/TextView.Black.Big.Bold"
+            android:layout_gravity="center"
+            android:text="@string/ride_poste"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/TextView.Black.Small"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/your_ride_posted" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Black_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_margin_20"
+            android:minHeight="32dp"
+            android:text="@string/ok" />
+    </LinearLayout>
+</RelativeLayout>

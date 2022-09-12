@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRide_for"
+            style="@style/TextView.Black.Big.Bold"
+            android:text="@string/ride_status"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_ride_message"
+            style="@style/TextView.Black.Medium"
+            android:layout_marginTop="10dp"
+            android:text="@string/ridelater_accepted"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/rideAlert_view"
+            style="@style/Black_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_20"
+            android:background="@color/colorRed"
+            android:minHeight="32dp"
+            android:text="@string/ok" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/african_drupp_pattern"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/pure_white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextView.Black.Medium.Bold"
+            android:text="@string/mastercard_visa_by_post" />
+
+        <Space style="@style/SpaceMini" />
+
+        <TextView
+            style="@style/TextView.Black.Medium"
+            android:text="@string/card_number" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_card_number"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_expiry_date"
+                    style="@style/TextView_style_d"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/expiry"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etCVV"
+                    style="@style/TextView_style_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/edittext_bordered"
+                    android:hint="@string/hint_mm"
+                    android:inputType="numberPassword"
+                    android:maxLength="3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCVV"
+                    style="@style/TextView_style_d"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/cvv"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_cvc"
+                    style="@style/TextView_style_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/edittext_bordered"
+                    android:hint="@string/hint_cvv"
+                    android:inputType="numberPassword"
+                    android:maxLength="3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space style="@style/SpaceMini" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:text="@string/promotion_code" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/pure_white"
+                    android:hint="@string/enter_code"
+                    android:inputType="text" />
+
+                <Space
+                    style="@style/SpaceMiniTrim"
+                    android:layout_width="5dp" />
+
+                <Button
+                    style="@style/Button.Black"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/apply"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/original_price" />
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+            <Space style="@style/SpaceMiniTrim" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/discount_" />
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+            <Space style="@style/SpaceMiniTrim" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/shipping_ups" />
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:layout_height="match_parent"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/total_price" />
+
+            <TextView
+                style="@style/TextView.Black.Medium"
+                android:layout_height="match_parent"
+                android:text="@string/dummy_price_" />
+        </LinearLayout>
+
+        <Button
+            style="@style/Button.Black"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:text="@string/pay_0" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Red.Small.Bold"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="@string/route"
+                android:textAllCaps="true" />
+
+
+            <com.quawlebs.drupp.util.AutoScrollableTextView
+                android:id="@+id/tv_route_name"
+                style="@style/TextView.White.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner_button_black"
+                android:gravity="center"
+                android:maxWidth="164dp"
+                android:maxLines="2"
+                android:minHeight="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/dummy_route"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_border_container"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/bus_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorRed"
+                    app:srcCompat="@drawable/bus_icon" />
+
+                <TextView
+                    android:id="@+id/tv_passenger"
+                    style="@style/TextView.Black.Mini.Bold"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/dummy_bus_passenger"
+                    android:translationY="-6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/user_profile_icon" />
+
+                <TextView
+                    android:id="@+id/tv_driver_name"
+                    style="@style/TextView.Black.Mini.Bold"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/dummy_name" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/rating_driver"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progressTint="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/TextView.Black.Mini.Bold"
+                    android:layout_gravity="center"
+                    android:text="@string/depart"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tv_departure_time"
+                    style="@style/TextView.Black.Medium.Bold"
+                    android:layout_gravity="center"
+                    android:text="@string/dummy_time_am"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    style="@style/TextView.Red.Small.Bold"
+                    android:layout_gravity="center"
+                    android:text="@string/arrive"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tv_arrival_time"
+                    style="@style/TextView.Red.Medium.Bold"
+                    android:layout_gravity="center"
+                    android:text="@string/dummy_time_am"
+                    android:textAllCaps="true" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <Button
+            android:id="@+id/btn_join"
+            style="@style/Button.Red.Round"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:minWidth="96dp"
+            android:minHeight="32dp"
+            android:text="@string/join" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorLightGrey" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+include ':app', ':library'
+include ':lib'
+include ':easylocation', ':bubbles'
+project(':easylocation').projectDir = new File('app/libs/easylocation')

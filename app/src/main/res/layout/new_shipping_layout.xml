@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_checkout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_save"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true"
+        android:paddingStart="@dimen/activity_padding_10"
+        android:paddingTop="@dimen/activity_padding_10"
+        android:paddingEnd="@dimen/activity_padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/first_name" />
+
+                <EditText
+                    android:id="@+id/et_first_name"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/last_name" />
+
+                <EditText
+                    android:id="@+id/et_last_namne"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/street" />
+
+                <EditText
+                    android:id="@+id/et_street"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/city" />
+
+                <EditText
+                    android:id="@+id/et_city"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/country" />
+
+                <EditText
+                    android:id="@+id/et_country"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/state" />
+
+                <EditText
+                    android:id="@+id/et_state"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/zip_postal_code" />
+
+                <EditText
+                    android:id="@+id/et_zip"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:inputType="numberSigned"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/phone_number" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/EditTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_5"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView.Grey.Medium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/original_price" />
+
+                <TextView
+                    android:id="@+id/tv_original_price"
+                    style="@style/TextView.Grey.Medium"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView.Grey.Medium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/discount_" />
+
+                <TextView
+                    android:id="@+id/tv_discount"
+                    style="@style/TextView.Grey.Medium"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+            <Space style="@style/SpaceMini" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView.Black.Medium.Bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_price" />
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    style="@style/TextView.Black.Medium.Bold"
+                    android:text="@string/dummy_price_" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/Button.Black"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:text="@string/save" />
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drupp_pattern_7" />
+
+    </FrameLayout>
+
+</RelativeLayout>

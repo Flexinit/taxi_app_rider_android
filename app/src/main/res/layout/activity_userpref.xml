@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/drupp_pattern"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/pf_tv"
+                    style="@style/TextView_style_d"
+                    android:text="@string/number_of_co_riders_you_want" />
+
+                <RadioGroup
+                    android:id="@+id/pf_corider_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start">
+
+                    <RadioButton
+                        android:id="@+id/cb1"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/with_one_10"
+                        android:textColor="@color/dark_grey" />
+
+                    <RadioButton
+                        android:id="@+id/cb2"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:tag="2"
+                        android:text="@string/with_two_5"
+                        android:textColor="@color/dark_grey" />
+
+                    <RadioButton
+                        android:id="@+id/cb3"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:tag="3"
+                        android:text="@string/with_three_3_3"
+                        android:textColor="@color/dark_grey" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/pf_tv2"
+                    style="@style/TextView_style_d"
+                    android:text="@string/type_of_driver_you_want_to_ride_with" />
+
+                <RadioGroup
+                    android:id="@+id/pf_type_of_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start">
+
+                    <RadioButton
+                        android:id="@+id/cbA1"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:checked="true"
+                        android:tag="1"
+                        android:text="@string/chatty"
+                        android:textColor="@color/dark_grey" />
+
+                    <RadioButton
+                        android:id="@+id/cbA2"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:tag="2"
+                        android:text="@string/silent"
+                        android:textColor="@color/dark_grey" />
+
+                    <RadioButton
+                        android:id="@+id/cbA3"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:tag="2"
+                        android:text="@string/i_dont_care"
+                        android:textColor="@color/dark_grey" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/pf_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:background="@color/light_grey"
+                    android:gravity="top"
+                    android:hint="@string/write_your_preferences_here"
+                    android:inputType="textFilter" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/enter_pickup_location" />
+
+                <EditText
+                    android:id="@+id/et_pickup_location"
+                    style="@style/TextView.Black.Medium.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_clear_black_24dp"
+                    android:drawableRight="@drawable/ic_clear_black_24dp"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/enter_pickup_location"
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/done_userPref"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_corner_button_black"
+                android:text="@string/done"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/drupp_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="matrix"
+            android:src="@drawable/african_drupp_pattern" />
+    </FrameLayout>
+</RelativeLayout>

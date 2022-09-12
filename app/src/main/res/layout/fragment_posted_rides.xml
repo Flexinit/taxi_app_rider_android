@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.scheduledRides.UserPostedRideLater">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ScheduleRidesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/app_logo_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/notification_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mobile_notification"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/no_rides_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/no_rides_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/no_scheduled_rides"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/schedule_ride_btn"
+        app:layout_constraintEnd_toEndOf="@id/notification_icon"
+        app:layout_constraintStart_toStartOf="@id/notification_icon"
+        app:layout_constraintTop_toBottomOf="@id/notification_icon"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:visibility="visible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/schedule_ride_btn"
+        style="@style/Button.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="@color/red"
+        android:elevation="3dp"
+        android:insetTop="2dp"
+        android:insetBottom="2dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/schedule_a_ride"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_rides_label"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

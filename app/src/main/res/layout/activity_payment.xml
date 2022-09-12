@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_toolbar_bill" />
+
+    <RadioGroup
+        android:id="@+id/rg_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_debit_card"
+            style="@style/RadioButton"
+            android:text="@string/debit_card" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorLightGrey" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <RadioButton
+            android:id="@+id/rb_credit_card"
+            style="@style/RadioButton"
+            android:text="@string/credit_card" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorLightGrey" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <RadioButton
+            android:id="@+id/rb_cash"
+            style="@style/RadioButton"
+            android:text="@string/cash" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorLightGrey" />
+    </RadioGroup>
+
+    <include
+        android:id="@+id/form_debit_card"
+        layout="@layout/form_debit_card"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_pay_try_again"
+        style="@style/Button.Black"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/try_again"
+        android:visibility="gone" />
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_payment_type"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

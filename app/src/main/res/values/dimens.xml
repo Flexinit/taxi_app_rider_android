@@ -1,0 +1,102 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+    <dimen name="nav_menu_width">260dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">10dp</dimen>
+    <dimen name="map_marker_diameter">40</dimen>
+    <dimen name="activity_padding_10">@dimen/activity_margin_10</dimen>
+    <dimen name="activity_margin_10">10dp</dimen>
+    <dimen name="activity_margin_16">16dp</dimen>
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_4">4dp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_14">14dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_22">22dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_56">56dp</dimen>
+    <dimen name="size_70">70dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_120">120dp</dimen>
+    <dimen name="size_140">140dp</dimen>
+
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_44">44sp</dimen>
+
+    <dimen name="progress_wheel_radius">24dp</dimen>
+    <dimen name="progress_wheel_radius_x">40dp</dimen>
+    <dimen name="edit_text_height">40dp</dimen>
+    <dimen name="edit_text_border_width">1dp</dimen>
+    <dimen name="spinner_min_height">40dp</dimen>
+    <dimen name="collapse_toolbar_height">125dp</dimen>
+    <dimen name="collapse_toolbar_offset">56dp</dimen>
+    <dimen name="activity_margin_5">5dp</dimen>
+    <dimen name="separator_min_height">1dp</dimen>
+    <dimen name="preview_image_width">128dp</dimen>
+    <dimen name="product_slider_min_height">296dp</dimen>
+    <dimen name="shop_button_min_height">32dp</dimen>
+    <dimen name="button_min_height">40dp</dimen>
+    <dimen name="checkout_image_min_height">96dp</dimen>
+    <dimen name="activity_margin_20">20dp</dimen>
+    <dimen name="activity_margin_2">2dp</dimen>
+    <dimen name="shop_toolbar_height">180dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="home_app_bar_height">108dp</dimen>
+    <dimen name="spinner_min_width">48dp</dimen>
+    <dimen name="cart_empty_image_size">256dp</dimen>
+    <dimen name="activity_padding_5">5dp</dimen>
+    <dimen name="activity_padding_20">20dp</dimen>
+    <dimen name="max_card_height">48dp</dimen>
+    <dimen name="activity_margin_32">32dp</dimen>
+    <dimen name="activity_margin_15">15dp</dimen>
+    <dimen name="pattern_bottom_height">24dp</dimen>
+    <dimen name="bottom_sheet_max_height">280dp</dimen>
+    <dimen name="pattern_bottom_min_height">10dp</dimen>
+    <dimen name="elevation_normal">4dp</dimen>
+    <dimen name="diameter">40dp</dimen>
+    <dimen name="activity_margin_50">50dp</dimen>
+    <dimen name="activity_margin_100">100dp</dimen>
+
+    <dimen name="margin_x_small">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_x_large">32dp</dimen>
+    <dimen name="margin_xx_large">64dp</dimen>
+
+    <dimen name="padding_small">@dimen/margin_small</dimen>
+    <dimen name="padding_medium">@dimen/margin_medium</dimen>
+    <dimen name="padding_large">@dimen/margin_large</dimen>
+    <dimen name="edit_txt_comment_height">96dp</dimen>
+    <dimen name="bottom_pattern_height">24dp</dimen>
+
+    <dimen name="spacing_small">0dp</dimen>
+    <dimen name="spacing_medium">0dp</dimen>
+    <dimen name="spacing_Large">8dp</dimen>
+
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_xlarge">22sp</dimen>
+
+    <dimen name="image_size_normal">40dp</dimen>
+
+    <dimen name="star_size_normal">15dp</dimen>
+
+    <dimen name="button_height_normal">35dp</dimen>
+
+    <dimen name="edit_text_large">90dp</dimen>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drupp_pattern_1"
+    tools:context=".view.ui.SupportMessageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar_support" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/type_here"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etQuery"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/etReason"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/light_grey"
+            android:gravity="top"
+            android:hint="@string/type_here" />
+
+        <Button
+            android:id="@+id/done"
+            style="@style/Black_Button"
+            android:layout_height="35dp"
+            android:layout_below="@+id/etQuery"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/snd_qry" />
+    </LinearLayout>
+
+
+</RelativeLayout>

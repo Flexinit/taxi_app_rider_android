@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ui.TripHistoryQuery">
+
+
+    <TextView
+        android:id="@+id/tvHowhelp"
+        style="@style/TextView.Black.Small.Bold"
+        android:layout_below="@id/view_line1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/help" />
+
+    <LinearLayout
+        android:id="@+id/LinParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line2"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/textview_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style_d"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="10"
+                android:text="@string/resend_rec"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:foreground="#AEFFFFFF"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/textview_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style_d"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="10"
+                android:text="@string/misconduct"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:foreground="#AEFFFFFF"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/textview_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style_d"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="10"
+                android:text="@string/lost_item"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:foreground="#AEFFFFFF"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@drawable/textview_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_style_d"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="10"
+                android:text="@string/longer_route"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:foreground="#AEFFFFFF"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="@color/light_grey"
+            android:gravity="top"
+            android:hint="@string/extra_details"
+            android:minHeight="@dimen/edit_txt_comment_height"
+            android:padding="@dimen/padding_medium" />
+
+        <Button
+            android:id="@+id/done"
+            style="@style/Black_Button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_xx_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:text="@string/snd_qry" />
+    </LinearLayout>
+</LinearLayout>

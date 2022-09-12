@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.BillActivity">
+
+    <include layout="@layout/app_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/pure_white">
+
+        <TextView
+            android:id="@+id/tvRideFinished"
+            style="@style/TextView.Black.Small.Bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="@string/ride_finish" />
+
+        <LinearLayout
+            android:id="@+id/lin_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRideFinished"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:layout_gravity="center"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/indore"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:foreground="#48FFFFFF"
+                app:srcCompat="@drawable/ic_swap" />
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="@string/dewas"
+                android:textColor="@color/grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBillAmount_Value"
+            style="@style/TextView.Black.Big.Bold"
+            android:layout_below="@id/lin_trip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="$49.99" />
+
+        <Button
+            android:id="@+id/btDone"
+            style="@style/Black_Button"
+            android:layout_height="35dp"
+            android:layout_below="@id/tvBillAmount_Value"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/done"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/silhouetee_black" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

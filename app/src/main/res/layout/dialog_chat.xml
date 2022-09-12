@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_chat" />
+
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/send_message_container"
+        android:layout_below="@id/toolbar" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/send_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_large"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.stfalcon.chatkit.messages.MessageInput
+                android:id="@+id/input_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:attachmentButtonBackground="?selectableItemBackgroundBorderless"
+                app:attachmentButtonIcon="@drawable/ic_attachment"
+                app:inputButtonBackground="@drawable/button_chat"
+                app:inputButtonHeight="@dimen/edit_text_height"
+                app:inputButtonIcon="@drawable/ic_send_chat"
+                app:inputButtonWidth="64dp"
+                app:inputHint="@string/type_message_here"
+                app:inputMaxLines="4"
+                app:inputTextColor="@color/colorBlack"
+                app:showAttachmentButton="false" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

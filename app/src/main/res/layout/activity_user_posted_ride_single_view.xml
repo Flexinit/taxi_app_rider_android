@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.BillActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar_ride_details_with_edit" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_x_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/toolbar_elevation">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:showDividers="beginning|middle|end"
+                android:stretchColumns="0.5,2">
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/date_" />
+
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+                </TableRow>
+
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/from" />
+
+
+                    <TextView
+                        android:id="@+id/source"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/to" />
+
+
+                    <TextView
+                        android:id="@+id/destination"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/destination" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/vehicle_type_" />
+
+
+                    <TextView
+                        android:id="@+id/vehType"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+
+
+                </TableRow>
+
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/driver_name_" />
+
+
+                    <TextView
+                        android:id="@+id/tv_driver_name"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/driver_ratings_" />
+
+                    <TextView
+                        android:id="@+id/tv_driver_rating"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_star"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:padding="5dp"
+                        tools:text="@string/driver_ratings_" />
+
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/vehicle_name_" />
+
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_model"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/vehicle_model_" />
+
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_model"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_above="@id/bottom_bar_pattern"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:src="@drawable/drupp_logo_black" />
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_pattern_height"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drupp_pattern_5" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+

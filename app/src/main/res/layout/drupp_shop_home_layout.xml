@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_padding_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextView.Grey.Small"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="@dimen/activity_margin_10"
+                        android:layout_weight="1"
+                        android:text="@string/popular_products"
+                        android:textAllCaps="true" />
+
+                    <Button
+                        android:id="@+id/btn_view_all"
+                        style="@style/Button.Black"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="@dimen/activity_margin_10"
+                        android:minHeight="32dp"
+                        android:text="@string/view_all"
+                        android:textAllCaps="true" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/separator_min_height"
+                    android:layout_marginTop="@dimen/activity_margin_10"
+                    android:background="@color/colorLightGrey" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:listitem="@layout/item_home_product" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

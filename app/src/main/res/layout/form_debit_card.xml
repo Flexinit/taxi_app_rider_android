@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/card_details_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_16"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/credit_card_number"
+            style="@style/EditTextStyle"
+            android:hint="@string/card_number"
+            android:inputType="number" />
+
+        <LinearLayout
+            style="@style/CCVDateHolder"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/credit_card_expiry"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:hint="@string/mm_yy"
+                android:inputType="date"
+                android:maxLength="5" />
+
+            <EditText
+                android:id="@+id/credit_card_ccv"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:hint="@string/cvv"
+                android:inputType="numberPassword"
+                android:maxLength="4" />
+
+
+        </LinearLayout>
+
+        <Space style="@style/SpaceMini" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/font_14">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_14"
+                    android:layout_centerInParent="true"
+                    android:indeterminateOnly="true"
+                    android:progressBackgroundTint="@color/colorPayAccentDark"
+                    android:progressTint="@color/colorPayAccent"
+                    android:progressTintMode="screen"
+                    tools:targetApi="lollipop" />
+
+                <Button
+                    android:id="@+id/pay_button"
+                    style="@style/PaymentButtonBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="@string/pay" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/secure_logo"
+                style="@style/SecureLogo"
+                android:contentDescription="TODO"
+                android:src="@drawable/white_paystack_logo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

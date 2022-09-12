@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer_layout"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_total_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_margin_20"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:layout_constraintEnd_toStartOf="@id/card_completed_rides"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/dashboard_divider_img">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle_back"
+                        android:backgroundTint="#F6F6F6"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_computer" />
+
+                    <TextView
+                        android:id="@+id/total_rides_numbers"
+                        style="@style/TextView.Black.Large.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="2" />
+
+                    <TextView
+                        style="@style/TextView.Black.Medium"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:text="@string/total_rides"
+                        android:textColor="@color/colorBlack"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/total_rides_numbers" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_completed_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/activity_margin_20"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toEndOf="@id/card_total_rides"
+                app:layout_constraintTop_toBottomOf="@id/dashboard_divider_img">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle_back"
+                        android:backgroundTint="#F6F6F6"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_circle_check" />
+
+                    <TextView
+                        android:id="@+id/completed_rides_numbers"
+                        style="@style/TextView.Black.Large.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="3" />
+
+                    <TextView
+                        style="@style/TextView.Black.Medium"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:text="@string/completed_rides_label"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/completed_rides_numbers" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/container_wallet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/colorAppYellow"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/dashboard_divider_1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_padding_20">
+
+                    <ImageView
+                        android:id="@+id/dashboard_wallet_icon"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/circle_back"
+                        android:scaleType="centerInside"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_wallet_black" />
+
+                    <TextView
+                        android:id="@+id/wallet_balance_label"
+                        style="@style/TextView.White.Big"
+                        android:layout_gravity="center"
+                        android:text="@string/wallet_balance_label"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_wallet_balance"
+                        style="@style/TextView.White.Big.Bold"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/wallet_balance_label"
+                        tools:text="$150" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/dashboard_divider_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@drawable/dashboard_divider_image"
+                app:layout_constraintTop_toBottomOf="@id/container_wallet" />
+
+            <TextView
+                android:id="@+id/dashboard_today_label"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/today"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/dashboard_divider_img"
+                app:layout_constraintEnd_toStartOf="@id/dashboard_week_label"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toTopOf="@id/dashboard_divider_img" />
+
+            <View
+                android:id="@+id/dashboard_today_underline"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:background="@color/red"
+                app:layout_constraintEnd_toEndOf="@id/dashboard_today_label"
+                app:layout_constraintStart_toStartOf="@id/dashboard_today_label"
+                app:layout_constraintTop_toBottomOf="@id/dashboard_today_label" />
+
+            <TextView
+                android:id="@+id/dashboard_week_label"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/this_week"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/dashboard_divider_img"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toEndOf="@id/dashboard_today_label"
+                app:layout_constraintTop_toTopOf="@id/dashboard_divider_img" />
+
+            <View
+                android:id="@+id/dashboard_week_underline"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:background="@color/red"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@id/dashboard_week_label"
+                app:layout_constraintStart_toStartOf="@id/dashboard_week_label"
+                app:layout_constraintTop_toBottomOf="@id/dashboard_week_label" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TextView.Black.Medium.Bold"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="John Smith" />
+
+            <TextView
+                android:id="@+id/tv_email_id"
+                style="@style/TextView.Black.Small"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                tools:text="John Smith@gmail.com" />
+
+            <View
+                android:id="@+id/dashboard_divider_1"
+                android:layout_width="match_parent"
+                android:layout_height="1.25dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/dialog_divider"
+                app:layout_constraintTop_toBottomOf="@id/tv_email_id" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_canceled_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:layout_constraintEnd_toStartOf="@id/container_scheduled_rides"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/card_total_rides">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle_back"
+                        android:backgroundTint="#F6F6F6"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_close_red" />
+
+                    <TextView
+                        android:id="@+id/cancelledRidesCount"
+                        style="@style/TextView.Black.Large.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="2" />
+
+                    <TextView
+                        style="@style/TextView.Black.Medium"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:text="@string/cancelled_rides"
+                        android:textColor="@color/colorBlack"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/cancelledRidesCount" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/container_scheduled_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toEndOf="@+id/card_canceled_rides"
+                app:layout_constraintTop_toBottomOf="@id/card_completed_rides">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_logo_new"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/circle_back"
+                        android:backgroundTint="#F6F6F6"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_calender_black" />
+
+                    <TextView
+                        android:id="@+id/tv_scheduled_rides"
+                        style="@style/TextView.Black.Large.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/activity_margin_10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="2" />
+
+                    <TextView
+                        style="@style/TextView.Black.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:text="@string/scheduled_rides"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_scheduled_rides" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_saved_locations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cardReferral"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/card_canceled_rides">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle_back"
+                        android:backgroundTint="#F6F6F6"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_floppy" />
+
+                    <TextView
+                        android:id="@+id/savedLocationRidesCount"
+                        style="@style/TextView.Black.Large.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="2" />
+
+                    <TextView
+                        style="@style/TextView.Black.Medium"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:text="@string/saved_locations"
+                        android:textColor="@color/colorBlack"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/savedLocationRidesCount" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReferral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toEndOf="@id/card_saved_locations"
+                app:layout_constraintTop_toBottomOf="@id/container_scheduled_rides">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle_back"
+                        android:backgroundTint="#F6F6F6"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_arrow_curved" />
+
+                    <TextView
+                        android:id="@+id/referral_numbers"
+                        style="@style/TextView.Black.Large.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="3" />
+
+                    <TextView
+                        style="@style/TextView.Black.Medium"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_10"
+                        android:text="@string/refer_app"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/referral_numbers" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/activity_padding_10" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/activity_padding_10" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer_layout"
+        layout="@layout/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

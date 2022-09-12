@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_margin_20"
+            android:adjustViewBounds="true"
+            android:src="@drawable/drupp_logo_black" />
+
+        <TextView
+            android:id="@+id/tv_payment_success_fail"
+            style="@style/TextView.Black.Big.Bold"
+            android:layout_gravity="center"
+            android:text="@string/payment_successful" />
+
+        <TextView
+            style="@style/TextView.Black.Medium.Bold"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:text="@string/payment_information" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:showDividers="beginning|middle|end"
+            android:stretchColumns="1,2">
+
+            <View
+                android:layout_height="@dimen/separator_min_height"
+                android:background="@color/colorSeparator" />
+
+            <TableRow
+                android:divider="@drawable/table_divider"
+                android:showDividers="middle">
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:text="@string/amount" />
+
+                <TextView
+                    android:id="@+id/tv_bill_amount"
+                    style="@style/TextView.Black.Medium"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    tools:text="@string/amount" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="@dimen/separator_min_height"
+                android:background="@color/colorSeparator" />
+
+
+            <TableRow
+                android:divider="@drawable/table_divider"
+                android:showDividers="middle"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/TextView.Black.Medium"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:text="@string/transaction_reference" />
+
+                <TextView
+                    android:id="@+id/tv_reference"
+                    style="@style/TextView.Black.Medium"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    android:text="@string/amount" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="@dimen/separator_min_height"
+                android:background="@color/colorSeparator"
+                android:visibility="visible" />
+        </TableLayout>
+
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <ImageView
+            android:id="@+id/check_animation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:srcCompat="@drawable/check" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button.Black.Round"
+            android:layout_gravity="center"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

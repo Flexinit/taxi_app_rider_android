@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/african_drupp_pattern"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topRel"
+        android:layout_width="260sp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/drupp_logo" />
+
+        <TextView
+            style="@style/TextView_style_Ittalic"
+            android:layout_below="@+id/image_logo"
+            android:layout_marginTop="3sp"
+            android:text="@string/tag_line"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/student_and_lagos_idols_silhoo" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

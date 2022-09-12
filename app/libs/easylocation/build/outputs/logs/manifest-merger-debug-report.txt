@@ -1,0 +1,57 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+	package
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:2:5-43
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:1-15:12
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:4:3-78
+	android:name
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:4:20-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:5:3-76
+	android:name
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:5:20-74
+application
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:6:3-14:17
+activity#com.sachinvarma.easylocation.EasyLocation
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:9:5-11:39
+	android:theme
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:10:9-49
+	android:name
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:11:9-37
+service#com.sachinvarma.easylocation.EasyLocationService
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:13:14-77
+uses-sdk
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml

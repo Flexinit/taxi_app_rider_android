@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.scheduledRides.ScheduledRidesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/actionBar"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorBlack">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/schedule_ride_Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_back_nav" />
+
+                <TextView
+                    android:id="@+id/tv_title_toolbar"
+                    style="@style/TextView_style_b"
+                    android:layout_centerInParent="true"
+                    android:text="@string/refer_app"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:src="@drawable/refer_icon"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_height="@dimen/_150sdp"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_title_toolbar"
+            style="@style/TextView_style_c"
+            android:layout_centerInParent="true"
+            android:text="@string/refer_friends_earn"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/background_outer_blueinside_grey"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtCouponCode"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:text="XCN11155"
+                    android:gravity="center"
+                    android:textSize="@dimen/_24sdp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:visibility="gone"
+                android:gravity="center"
+                android:background="@drawable/background_blue"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="COPY"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"></TextView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrshare"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:background="@color/quantum_googred"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:textAllCaps="true"
+                android:text="@string/share"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"></TextView>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtReferredHistory"
+            style="@style/TextView_style_c"
+            android:padding="@dimen/_5sdp"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:text="@string/referred_history"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/cornflower_blue_two_dark"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

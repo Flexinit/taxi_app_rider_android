@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_checkout" />
+
+    <ExpandableListView
+        android:id="@+id/list_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container"
+        android:layout_below="@id/toolbar"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Button.White"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/btn_apply"
+            style="@style/Button.Black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/apply" />
+    </LinearLayout>
+</RelativeLayout>

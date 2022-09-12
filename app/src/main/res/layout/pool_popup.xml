@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp">
+
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/TextView_style_d"
+            android:text="@string/co_rider"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/text_pool"/>
+
+        <TextView
+            android:id="@+id/tvRide_Scheduled"
+
+            style="@style/TextView_style_d"
+            android:layout_centerHorizontal="true"
+            android:text="@string/enjoy"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/text_pool"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="91dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

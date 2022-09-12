@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+        <TextView
+            style="@style/TextView_style_d"
+            android:text="@string/cancel_ride_text"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvCancelRide"
+            android:layout_marginBottom="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCancelRide"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="@string/cancel_ride"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/btYesCancel"
+                android:background="@drawable/round_corner_button_black"
+                android:textColor="@color/pure_white"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="@string/don_t_cance"
+                android:id="@+id/btDontCancel"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/round_corner_button_grey"
+                android:textColor="@color/pure_white"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

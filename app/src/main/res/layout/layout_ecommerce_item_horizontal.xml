@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corners_white_view">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shop_rel1">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_margin="20dp"
+            android:layout_below="@id/tvProduct_name"
+            android:src="@drawable/mshoe"
+            android:id="@+id/image_product"/>
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:layout_toRightOf="@id/image_product"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Item 1"
+            android:id="@+id/tvProduct_name"/>
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:layout_centerHorizontal="true"
+            android:text="@string/shop_now"
+            android:textSize="15sp"
+            android:layout_below="@id/image_product"
+            android:id="@+id/tvShopNow"/>
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            style="@style/TextView_style_d"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:text="$1.37"
+            android:textSize="15sp"
+            android:layout_below="@id/tvDetails"
+            android:id="@+id/tvPrice"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

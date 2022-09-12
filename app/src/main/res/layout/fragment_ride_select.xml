@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <RadioGroup
+        android:id="@+id/groupPoolOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/pool1"
+            style="@android:style/Widget.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:text="@string/with_one_10"
+            android:textColor="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/pool2"
+            style="@android:style/Widget.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:tag="2"
+            android:text="@string/with_two_5"
+            android:textColor="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/pool3"
+            style="@android:style/Widget.CompoundButton.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="3"
+            android:text="@string/with_three_3_3"
+            android:textColor="@color/grey" />
+    </RadioGroup>
+
+
+
+
+</LinearLayout>

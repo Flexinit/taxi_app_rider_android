@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/flix/AndroidStudioProjects/drupp-android-rider/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/res/values-xhdpi/dimens.xml",
+                    "from": {
+                        "startLines": "17,19,8,7,6,10,9,12,4,3,2,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "506,559,275,232,190,360,317,406,144,99,55,456",
+                        "endColumns": "51,47,41,42,41,44,42,48,44,44,43,47",
+                        "endOffsets": "553,602,312,270,227,400,355,450,184,139,94,499"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,155,197,240,282,327,370,419,464,509,553",
+                        "endColumns": "51,47,41,42,41,44,42,48,44,44,43,47",
+                        "endOffsets": "102,150,192,235,277,322,365,414,459,504,548,596"
+                    }
+                }
+            ]
+        }
+    ]
+}

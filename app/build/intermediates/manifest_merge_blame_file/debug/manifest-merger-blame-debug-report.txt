@@ -1,0 +1,1236 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.quawlebs.drupp"
+4    android:versionCode="2"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:10:5-12:48
+15-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:11:9-63
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:13:5-15:48
+16-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:14:9-65
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:16:5-82
+17-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:16:22-79
+18
+19    <uses-feature android:name="android.hardware.location.network" />
+19-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:18:5-70
+19-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:18:19-67
+20    <uses-feature android:name=" android.hardware.location.gps" />
+20-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:19:5-67
+20-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:19:19-64
+21
+22    <uses-permission android:name="android.perrimission.INTERNET" />
+22-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:21:5-69
+22-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:21:22-66
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:22:5-79
+23-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:22:22-76
+24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+24-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:23:5-76
+24-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:23:22-73
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:24:5-80
+25-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:24:22-77
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+26-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:25:5-81
+26-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:25:22-78
+27
+28    <supports-screens
+28-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:27:5-32:40
+29        android:anyDensity="true"
+29-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:28:9-34
+30        android:largeScreens="true"
+30-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:29:9-36
+31        android:normalScreens="true"
+31-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:30:9-37
+32        android:smallScreens="true"
+32-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:31:9-36
+33        android:xlargeScreens="true" />
+33-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:32:9-37
+34
+35    <uses-permission android:name="android.permission.INTERNET" />
+35-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:13:5-67
+35-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:13:22-64
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:11:5-65
+36-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:11:22-62
+37
+38    <uses-feature android:name="android.hardware.camera" />
+38-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:13:5-60
+38-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:13:19-57
+39    <uses-feature android:name="android.hardware.camera.autofocus" />
+39-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:14:5-70
+39-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:14:19-67
+40
+41    <uses-permission android:name="android.permission.VIBRATE" />
+41-->[co.paystack.android.design.widget:pinpad:1.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/5d42d2fa77bd67c2286c1a9a6a7744c5/jetified-pinpad-1.0.1/AndroidManifest.xml:11:5-66
+41-->[co.paystack.android.design.widget:pinpad:1.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/5d42d2fa77bd67c2286c1a9a6a7744c5/jetified-pinpad-1.0.1/AndroidManifest.xml:11:22-63
+42    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+42-->[:bubbles] /home/flix/AndroidStudioProjects/drupp-android-rider/bubbles/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:5-78
+42-->[:bubbles] /home/flix/AndroidStudioProjects/drupp-android-rider/bubbles/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:22-75
+43
+44    <uses-feature
+44-->[com.google.android.gms:play-services-maps:17.0.0] /home/flix/.gradle/caches/transforms-2/files-2.1/9f264c6b4b772104a5754c0fdf0ae964/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+45        android:glEsVersion="0x00020000"
+45-->[com.google.android.gms:play-services-maps:17.0.0] /home/flix/.gradle/caches/transforms-2/files-2.1/9f264c6b4b772104a5754c0fdf0ae964/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+46        android:required="true" />
+46-->[com.google.android.gms:play-services-maps:17.0.0] /home/flix/.gradle/caches/transforms-2/files-2.1/9f264c6b4b772104a5754c0fdf0ae964/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+47
+48    <uses-permission android:name="android.permission.WAKE_LOCK" />
+48-->[com.google.android.gms:play-services-measurement-api:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/e111272e3928297e9f23a018f0a3b4ea/play-services-measurement-api-17.3.0/AndroidManifest.xml:24:5-68
+48-->[com.google.android.gms:play-services-measurement-api:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/e111272e3928297e9f23a018f0a3b4ea/play-services-measurement-api-17.3.0/AndroidManifest.xml:24:22-65
+49    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+49-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:26:5-110
+49-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:26:22-107
+50
+51    <application
+51-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:34:5-363:19
+52        android:name="com.quawlebs.drupp.DruppApp"
+52-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:35:9-33
+53        android:allowBackup="true"
+53-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:36:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.1.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7be48b3794036c9552dc2a1aedfb3471/core-1.1.0/AndroidManifest.xml:24:18-86
+55        android:configChanges="orientation"
+55-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:19:9-44
+56        android:debuggable="true"
+57        android:icon="@drawable/launcher_icon"
+57-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:37:9-47
+58        android:label="@string/app_name"
+58-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:38:9-41
+59        android:roundIcon="@drawable/launcher_icon"
+59-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:39:9-52
+60        android:screenOrientation="portrait"
+60-->[com.github.jrvansuita:PickImage:2.2.4] /home/flix/.gradle/caches/transforms-2/files-2.1/067270c5211c91a0aed6a9af85d70aaf/jetified-PickImage-2.2.4/AndroidManifest.xml:21:9-45
+61        android:supportsRtl="true"
+61-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:40:9-35
+62        android:testOnly="true"
+63        android:theme="@style/AppTheme" >
+63-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:41:9-40
+64        <activity android:name="com.quawlebs.drupp.view.ui.PostRideActivity" />
+64-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:44:9-71
+64-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:44:19-59
+65        <activity
+65-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:45:9-47:63
+66            android:name="com.quawlebs.drupp.view.ui.TripHistoryQuery"
+66-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:46:13-53
+67            android:windowSoftInputMode="stateAlwaysHidden" />
+67-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:47:13-60
+68        <activity android:name="com.quawlebs.drupp.view.ui.RateCoRiders" />
+68-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:48:9-58
+68-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:48:19-55
+69        <activity android:name="com.quawlebs.drupp.login.LoginActivity" />
+69-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:49:9-57
+69-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:49:19-54
+70        <activity android:name="com.quawlebs.drupp.view.ui.scheduledRides.DriverPostedRidesEdit" />
+70-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:50:9-82
+70-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:50:19-79
+71        <activity
+71-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:51:9-54:73
+72            android:name="com.quawlebs.drupp.view.ui.scheduledRides.UserPostedRidesEdit"
+72-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:52:13-71
+73            android:screenOrientation="portrait"
+73-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:53:13-49
+74            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+74-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:54:13-70
+75        <activity android:name="com.quawlebs.drupp.view.ui.scheduledRides.DriverPostedRideSingelView" />
+75-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:55:9-87
+75-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:55:19-84
+76        <activity android:name="com.quawlebs.drupp.view.ui.scheduledRides.ScheduledRidesActivity" />
+76-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:56:9-83
+76-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:56:19-80
+77        <activity android:name="com.quawlebs.drupp.view.ui.scheduledRides.UserPostedRideSingelView" />
+77-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:57:9-85
+77-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:57:19-82
+78        <!--
+79             The API key for Google Maps-based APIs is defined as a string resource.
+80             (See the file "res/values/google_maps_api.xml").
+81             Note that the API key is linked to the encryption key used to sign the APK.
+82             You need a different API key for each encryption key, including the release key that is used to
+83             sign the APK for publishing.
+84             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+85        -->
+86        <meta-data
+86-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:66:9-68:55
+87            android:name="com.google.android.geo.API_KEY"
+87-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:67:13-58
+88            android:value="@string/google_maps_key" />
+88-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:68:13-52
+89        <meta-data
+89-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:69:9-71:69
+90            android:name="com.google.android.gms.version"
+90-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:70:13-58
+91            android:value="@integer/google_play_services_version" />
+91-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:71:13-66
+92
+93        <activity
+93-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:73:9-75:59
+94            android:name="com.quawlebs.drupp.view.ui.MapsActivity"
+94-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:74:13-49
+95            android:label="@string/title_activity_maps" />
+95-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:75:13-56
+96        <activity android:name="com.quawlebs.drupp.view.ui.NavDrawer" />
+96-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:76:9-55
+96-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:76:19-52
+97        <activity
+97-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:77:9-79:63
+98            android:name="com.quawlebs.drupp.view.ui.BrowseProducts"
+98-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:78:13-51
+99            android:windowSoftInputMode="stateAlwaysHidden" />
+99-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:79:13-60
+100        <activity
+100-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:80:9-82:63
+101            android:name="com.quawlebs.drupp.view.ui.TripHistoryFinal"
+101-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:81:13-53
+102            android:windowSoftInputMode="stateAlwaysHidden" />
+102-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:82:13-60
+103        <activity
+103-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:83:9-85:63
+104            android:name="com.quawlebs.drupp.view.ui.history.RideHistory"
+104-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:84:13-56
+105            android:windowSoftInputMode="stateAlwaysHidden" />
+105-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:85:13-60
+106        <activity
+106-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:86:9-88:63
+107            android:name="com.quawlebs.drupp.view.ui.PaymentOptions"
+107-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:87:13-51
+108            android:windowSoftInputMode="stateAlwaysHidden" />
+108-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:88:13-60
+109        <activity
+109-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:89:9-91:63
+110            android:name="com.quawlebs.drupp.view.ui.CancelRideReason"
+110-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:90:13-53
+111            android:windowSoftInputMode="stateAlwaysHidden" />
+111-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:91:13-60
+112        <activity
+112-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:92:9-96:63
+113            android:name="com.quawlebs.drupp.view.ui.RideStartActivity"
+113-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:93:13-54
+114            android:launchMode="singleTask"
+114-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:94:13-44
+115            android:screenOrientation="portrait"
+115-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:95:13-49
+116            android:windowSoftInputMode="stateAlwaysHidden" />
+116-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:96:13-60
+117        <activity
+117-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:97:9-99:63
+118            android:name="com.quawlebs.drupp.view.ui.SupportActivity"
+118-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:98:13-52
+119            android:windowSoftInputMode="stateAlwaysHidden" />
+119-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:99:13-60
+120        <activity
+120-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:100:9-102:63
+121            android:name="com.quawlebs.drupp.view.ui.CardActivity"
+121-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:101:13-49
+122            android:windowSoftInputMode="stateAlwaysHidden" />
+122-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:102:13-60
+123        <activity
+123-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:103:9-105:63
+124            android:name="com.quawlebs.drupp.view.ui.SupportMessageActivity"
+124-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:104:13-59
+125            android:windowSoftInputMode="stateAlwaysHidden" />
+125-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:105:13-60
+126        <activity
+126-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:106:9-108:63
+127            android:name="com.quawlebs.drupp.view.ui.RideFor"
+127-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:107:13-44
+128            android:windowSoftInputMode="stateAlwaysHidden" />
+128-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:108:13-60
+129        <activity
+129-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:109:9-111:63
+130            android:name="com.quawlebs.drupp.view.ui.RateDriverActivity"
+130-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:110:13-55
+131            android:windowSoftInputMode="stateAlwaysHidden" />
+131-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:111:13-60
+132        <activity
+132-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:112:9-115:63
+133            android:name="com.quawlebs.drupp.view.ui.TermsConditionActivity"
+133-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:113:13-59
+134            android:screenOrientation="portrait"
+134-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:114:13-49
+135            android:windowSoftInputMode="stateAlwaysHidden" />
+135-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:115:13-60
+136        <activity
+136-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:116:9-119:63
+137            android:name="com.quawlebs.drupp.view.ui.PrivacyPolicyActivity"
+137-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:117:13-58
+138            android:screenOrientation="portrait"
+138-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:118:13-49
+139            android:windowSoftInputMode="stateAlwaysHidden" />
+139-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:119:13-60
+140        <activity
+140-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:120:9-123:63
+141            android:name="com.quawlebs.drupp.view.ui.NotificationActivity"
+141-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:121:13-57
+142            android:screenOrientation="portrait"
+142-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:122:13-49
+143            android:windowSoftInputMode="stateAlwaysHidden" />
+143-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:123:13-60
+144        <activity
+144-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:124:9-128:63
+145            android:name="com.quawlebs.drupp.view.ui.RideOnActivity"
+145-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:125:13-51
+146            android:launchMode="singleTask"
+146-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:126:13-44
+147            android:screenOrientation="portrait"
+147-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:127:13-49
+148            android:windowSoftInputMode="stateAlwaysHidden" />
+148-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:128:13-60
+149        <activity
+149-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:129:9-132:63
+150            android:name="com.quawlebs.drupp.view.ui.news.NewsFeedActivity"
+150-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:130:13-58
+151            android:screenOrientation="portrait"
+151-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:131:13-49
+152            android:windowSoftInputMode="stateAlwaysHidden" />
+152-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:132:13-60
+153        <activity
+153-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:133:9-136:63
+154            android:name="com.quawlebs.drupp.view.ui.NewsDetailsActivity"
+154-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:134:13-56
+155            android:screenOrientation="portrait"
+155-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:135:13-49
+156            android:windowSoftInputMode="stateAlwaysHidden" />
+156-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:136:13-60
+157        <activity
+157-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:137:9-140:63
+158            android:name="com.quawlebs.drupp.view.ui.ShoppingActivity"
+158-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:138:13-53
+159            android:screenOrientation="portrait"
+159-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:139:13-49
+160            android:windowSoftInputMode="stateAlwaysHidden" />
+160-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:140:13-60
+161        <activity
+161-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:141:9-144:63
+162            android:name="com.quawlebs.drupp.view.ui.UserSettingActivity"
+162-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:142:13-56
+163            android:screenOrientation="portrait"
+163-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:143:13-49
+164            android:windowSoftInputMode="stateAlwaysHidden" />
+164-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:144:13-60
+165        <activity
+165-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:145:9-148:63
+166            android:name="com.quawlebs.drupp.view.ui.ProfileActivity"
+166-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:146:13-52
+167            android:screenOrientation="portrait"
+167-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:147:13-49
+168            android:windowSoftInputMode="stateAlwaysHidden" />
+168-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:148:13-60
+169        <activity
+169-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:149:9-152:73
+170            android:name="com.quawlebs.drupp.view.ui.UserPreferencesActivity"
+170-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:150:13-60
+171            android:screenOrientation="portrait"
+171-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:151:13-49
+172            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+172-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:152:13-70
+173        <activity
+173-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:153:9-158:59
+174            android:name="com.quawlebs.drupp.view.ui.ride.RideActivity"
+174-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:154:13-54
+175            android:label="@string/title_activity_ride_"
+175-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:155:13-57
+176            android:launchMode="singleTask"
+176-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:156:13-44
+177            android:screenOrientation="portrait"
+177-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:157:13-49
+178            android:theme="@style/AppTheme.NoActionBar" />
+178-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:158:13-56
+179        <activity
+179-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:159:9-162:55
+180            android:name="com.quawlebs.drupp.view.ui.VerificationActivity"
+180-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:160:13-57
+181            android:screenOrientation="portrait"
+181-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:161:13-49
+182            android:windowSoftInputMode="adjustPan" />
+182-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:162:13-52
+183        <activity
+183-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:163:9-166:63
+184            android:name="com.quawlebs.drupp.login.StartUpActivity"
+184-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:164:13-50
+185            android:screenOrientation="portrait"
+185-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:165:13-49
+186            android:windowSoftInputMode="stateAlwaysHidden" />
+186-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:166:13-60
+187        <activity
+187-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:167:9-171:63
+188            android:name="com.quawlebs.drupp.view.ui.BillActivity"
+188-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:168:13-49
+189            android:launchMode="singleTask"
+189-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:169:13-44
+190            android:screenOrientation="portrait"
+190-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:170:13-49
+191            android:windowSoftInputMode="stateAlwaysHidden" />
+191-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:171:13-60
+192        <activity
+192-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:172:9-176:63
+193            android:name="com.quawlebs.drupp.view.ui.EndRideActivity"
+193-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:173:13-52
+194            android:launchMode="singleTask"
+194-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:174:13-44
+195            android:screenOrientation="portrait"
+195-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:175:13-49
+196            android:windowSoftInputMode="stateAlwaysHidden" />
+196-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:176:13-60
+197        <activity
+197-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:177:9-186:20
+198            android:name="com.quawlebs.drupp.view.ui.MainActivity"
+198-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:178:13-49
+199            android:screenOrientation="portrait"
+199-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:179:13-49
+200            android:windowSoftInputMode="stateAlwaysHidden" >
+200-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:180:13-60
+201            <intent-filter>
+201-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:181:13-185:29
+202                <action android:name="android.intent.action.MAIN" />
+202-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:182:17-69
+202-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:182:25-66
+203
+204                <category android:name="android.intent.category.LAUNCHER" />
+204-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:184:17-77
+204-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:184:27-74
+205            </intent-filter>
+206        </activity>
+207        <activity
+207-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:187:9-189:73
+208            android:name="com.quawlebs.drupp.view.ui.UserRegistrationActivity"
+208-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:188:13-61
+209            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+209-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:189:13-70
+210        <activity
+210-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:190:9-192:73
+211            android:name="com.quawlebs.drupp.view.ui.shopping.ReferralActivity"
+211-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:191:13-62
+212            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+212-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:192:13-70
+213        <activity
+213-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:193:9-195:73
+214            android:name="com.quawlebs.drupp.view.ui.notifications.SingleNotificationActivity"
+214-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:194:13-77
+215            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+215-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:195:13-70
+216        <activity
+216-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:196:9-198:73
+217            android:name="com.quawlebs.drupp.view.ui.ReferralHistory"
+217-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:197:13-52
+218            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+218-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:198:13-70
+219        <activity
+219-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:199:9-244:20
+220            android:name="com.quawlebs.drupp.view.ui.LiveLocationActivity"
+220-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:200:13-57
+221            android:launchMode="singleTask" >
+221-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:201:13-44
+222            <intent-filter
+222-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:202:13-215:29
+223                android:autoVerify="true"
+223-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:203:17-42
+224                android:label="@string/filter_view_live_location" >
+224-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:204:17-66
+225                <action android:name="android.intent.action.VIEW" />
+225-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:17-69
+225-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:25-66
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:17-76
+227-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:27-73
+228                <category android:name="android.intent.category.BROWSABLE" />
+228-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:17-78
+228-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:27-75
+229                <!-- Accepts URIs that begin with "https://api.qualwebs.com/drupp/api/user/share-live-location” -->
+230                <data
+230-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:210:17-213:46
+231                    android:host="api.qualwebs.com"
+231-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:211:21-52
+232                    android:pathPrefix="/drupp/api/user/open-shared-app"
+232-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:212:21-73
+233                    android:scheme="https" />
+233-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:213:21-43
+234                <!-- note that the leading "/" is required for pathPrefix -->
+235            </intent-filter>
+236            <intent-filter
+236-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:216:13-229:29
+237                android:autoVerify="true"
+237-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:217:17-42
+238                android:label="@string/filter_view_live_location" >
+238-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:218:17-66
+239                <action android:name="android.intent.action.VIEW" />
+239-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:17-69
+239-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:25-66
+240
+241                <category android:name="android.intent.category.DEFAULT" />
+241-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:17-76
+241-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:27-73
+242                <category android:name="android.intent.category.BROWSABLE" />
+242-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:17-78
+242-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:27-75
+243                <!-- Accepts URIs that begin with "https://api.qualwebs.com/drupp/api/user/share-live-location” -->
+244                <data
+244-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:210:17-213:46
+245                    android:host="api.qualwebs.com"
+245-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:211:21-52
+246                    android:pathPrefix="/drupp/api/user/open-shared-app"
+246-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:212:21-73
+247                    android:scheme="http" />
+247-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:213:21-43
+248                <!-- note that the leading "/" is required for pathPrefix -->
+249            </intent-filter>
+250            <intent-filter
+250-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:230:13-243:29
+251                android:autoVerify="true"
+251-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:231:17-42
+252                android:label="@string/filter_view_live_location" >
+252-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:232:17-66
+253                <action android:name="android.intent.action.VIEW" />
+253-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:17-69
+253-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:25-66
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:17-76
+255-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:27-73
+256                <category android:name="android.intent.category.BROWSABLE" />
+256-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:17-78
+256-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:27-75
+257                <!-- Accepts URIs that begin with "https://api.qualwebs.com/drupp/api/user/share-live-location” -->
+258                <data
+258-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:210:17-213:46
+259                    android:host="qualwebs"
+259-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:211:21-52
+260                    android:path="/"
+260-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:240:21-37
+261                    android:scheme="druppapp" />
+261-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:213:21-43
+262                <!-- note that the leading "/" is required for pathPrefix -->
+263            </intent-filter>
+264        </activity>
+265        <activity
+265-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:245:9-247:59
+266            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+266-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:246:13-76
+267            android:theme="@style/Base.Theme.AppCompat" />
+267-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:247:13-56
+268        <activity
+268-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:248:9-250:52
+269            android:name="com.quawlebs.drupp.view.ui.payments.PaymentCashActivity"
+269-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:249:13-65
+270            android:screenOrientation="portrait" />
+270-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:250:13-49
+271        <activity
+271-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:251:9-253:52
+272            android:name="com.quawlebs.drupp.view.ui.shopping.ShoppingHomeActivity"
+272-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:252:13-66
+273            android:screenOrientation="portrait" />
+273-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:253:13-49
+274        <activity
+274-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:254:9-256:52
+275            android:name="com.quawlebs.drupp.view.ui.search.ActivityUserAddress"
+275-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:255:13-63
+276            android:screenOrientation="portrait" />
+276-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:256:13-49
+277        <activity
+277-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:257:9-259:52
+278            android:name="com.quawlebs.drupp.view.ui.payments.PaymentViewActivity"
+278-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:258:13-65
+279            android:screenOrientation="portrait" />
+279-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:259:13-49
+280        <activity
+280-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:260:9-262:52
+281            android:name="com.quawlebs.drupp.view.ui.payments.ActivityAddMoney"
+281-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:261:13-62
+282            android:screenOrientation="portrait" />
+282-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:262:13-49
+283        <activity
+283-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:263:9-265:73
+284            android:name="com.quawlebs.drupp.view.ui.payments.MainPaymentActivity"
+284-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:264:13-65
+285            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+285-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:265:13-70
+286        <activity
+286-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:266:9-268:52
+287            android:name="com.quawlebs.drupp.view.ui.chat.ChatActivity"
+287-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:267:13-54
+288            android:screenOrientation="portrait" />
+288-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:268:13-49
+289        <activity
+289-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:269:9-272:73
+290            android:name="com.quawlebs.drupp.view.ui.BusChooserActivity"
+290-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:270:13-55
+291            android:screenOrientation="portrait"
+291-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:271:13-49
+292            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+292-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:272:13-70
+293        <activity
+293-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:273:9-275:52
+294            android:name="com.quawlebs.drupp.view.ui.BusRidesActivity"
+294-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:274:13-53
+295            android:screenOrientation="portrait" />
+295-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:275:13-49
+296        <activity
+296-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:276:9-279:73
+297            android:name="com.quawlebs.drupp.view.ui.shopping.ShopMainActivity"
+297-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:277:13-62
+298            android:screenOrientation="portrait"
+298-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:278:13-49
+299            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+299-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:279:13-70
+300        <activity
+300-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:280:9-283:73
+301            android:name="com.quawlebs.drupp.view.ui.shopping.SingleProductDetailActivity"
+301-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:281:13-73
+302            android:screenOrientation="portrait"
+302-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:282:13-49
+303            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+303-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:283:13-70
+304        <activity
+304-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:284:9-287:73
+305            android:name="com.quawlebs.drupp.view.ui.shopping.CheckOutActivity"
+305-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:285:13-62
+306            android:screenOrientation="portrait"
+306-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:286:13-49
+307            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+307-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:287:13-70
+308        <activity
+308-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:288:9-291:73
+309            android:name="com.quawlebs.drupp.view.ui.shopping.SearchFilterProductsActivity"
+309-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:289:13-74
+310            android:screenOrientation="portrait"
+310-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:290:13-49
+311            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+311-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:291:13-70
+312        <activity
+312-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:292:9-295:73
+313            android:name="com.quawlebs.drupp.view.ui.shopping.ShippingActivity"
+313-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:293:13-62
+314            android:screenOrientation="portrait"
+314-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:294:13-49
+315            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+315-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:295:13-70
+316        <activity
+316-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:296:9-299:73
+317            android:name="com.quawlebs.drupp.view.ui.shopping.AddAddressActivity"
+317-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:297:13-64
+318            android:screenOrientation="portrait"
+318-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:298:13-49
+319            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+319-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:299:13-70
+320        <activity
+320-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:300:9-303:73
+321            android:name="com.quawlebs.drupp.view.ui.shopping.OrderTrackingActivity"
+321-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:301:13-67
+322            android:screenOrientation="portrait"
+322-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:302:13-49
+323            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+323-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:303:13-70
+324        <activity
+324-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:304:9-307:73
+325            android:name="com.quawlebs.drupp.view.ui.DashboardActivity"
+325-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:305:13-54
+326            android:screenOrientation="portrait"
+326-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:306:13-49
+327            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+327-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:307:13-70
+328        <activity
+328-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:308:9-311:73
+329            android:name="com.quawlebs.drupp.view.ui.shopping.MyOrdersActivity"
+329-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:309:13-62
+330            android:screenOrientation="portrait"
+330-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:310:13-49
+331            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+331-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:311:13-70
+332        <activity
+332-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:312:9-315:73
+333            android:name="com.quawlebs.drupp.view.ui.news.NewsFeedMainActivity"
+333-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:313:13-62
+334            android:screenOrientation="portrait"
+334-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:314:13-49
+335            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+335-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:315:13-70
+336        <activity
+336-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:316:9-319:73
+337            android:name="com.quawlebs.drupp.view.ui.payments.BankPaymentActivity"
+337-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:317:13-65
+338            android:screenOrientation="portrait"
+338-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:318:13-49
+339            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+339-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:319:13-70
+340        <activity
+340-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:320:9-323:73
+341            android:name="com.quawlebs.drupp.view.ui.busbooking.BusBookActivity"
+341-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:321:13-63
+342            android:screenOrientation="portrait"
+342-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:322:13-49
+343            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+343-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:323:13-70
+344        <activity
+344-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:324:9-327:73
+345            android:name="com.quawlebs.drupp.view.ui.ride.BottomSheetRideActivity"
+345-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:325:13-65
+346            android:screenOrientation="portrait"
+346-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:326:13-49
+347            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+347-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:327:13-70
+348        <activity
+348-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:328:9-331:74
+349            android:name="com.quawlebs.drupp.view.ui.search.PlaceSearchActivity"
+349-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:329:13-63
+350            android:screenOrientation="portrait"
+350-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:330:13-49
+351            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" />
+351-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:331:13-71
+352        <activity
+352-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:332:9-335:73
+353            android:name="com.quawlebs.drupp.view.ui.favorites.SavedLocationActivity"
+353-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:333:13-68
+354            android:screenOrientation="portrait"
+354-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:334:13-49
+355            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" /> <!-- optional (needed if default theme has no action bar) -->
+355-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:335:13-70
+356        <service
+356-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:336:9-338:40
+357            android:name="com.quawlebs.drupp.service.FetchAddressIntentService"
+357-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:337:13-62
+358            android:exported="false" />
+358-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:338:13-37
+359        <service
+359-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:339:9-345:19
+360            android:name="com.quawlebs.drupp.service.MyFirebaseMessagingService"
+360-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:340:13-63
+361            android:exported="false" >
+361-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:341:13-37
+362            <intent-filter>
+362-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:342:13-344:29
+363                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+363-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:343:17-78
+363-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:343:25-75
+364            </intent-filter>
+365        </service>
+366        <service android:name="com.quawlebs.drupp.service.NotificationService" />
+366-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:346:9-64
+366-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:346:18-61
+367        <service android:name="com.quawlebs.drupp.service.LocationTrackingService" />
+367-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:347:9-68
+367-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:347:18-65
+368
+369        <provider
+370            android:name="androidx.core.content.FileProvider"
+370-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:350:13-62
+371            android:authorities="com.quawlebs.drupp.com.vansuita.pickimage.provider"
+371-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:351:13-83
+372            android:exported="false"
+372-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:352:13-37
+373            android:grantUriPermissions="true" >
+373-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:353:13-47
+374            <meta-data
+374-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:355:13-357:65
+375                android:name="android.support.FILE_PROVIDER_PATHS"
+375-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:356:17-67
+376                android:resource="@xml/picker_provider_paths" />
+376-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:357:17-62
+377        </provider>
+378
+379        <meta-data
+379-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:360:9-362:80
+380            android:name="co.paystack.android.PublicKey"
+380-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:361:13-57
+381            android:value="pk_live_ae20a06203653517c3923b557f272526e4a55045" />
+381-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:362:13-77
+382        <meta-data
+382-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:19:9-21:63
+383            android:name="com.facebook.sdk.ApplicationId"
+383-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:20:13-58
+384            android:value="@string/facebook_application_id" />
+384-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:21:13-60
+385
+386        <activity
+386-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:23:9-27:61
+387            android:name="com.firebase.ui.auth.KickoffActivity"
+387-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:24:13-64
+388            android:exported="false"
+388-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:25:13-37
+389            android:label=""
+389-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:26:13-29
+390            android:theme="@style/FirebaseUI.Transparent" />
+390-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:27:13-58
+391        <activity
+391-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:28:9-32:61
+392            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
+392-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:29:13-76
+393            android:exported="false"
+393-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:30:13-37
+394            android:label=""
+394-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:31:13-29
+395            android:theme="@style/FirebaseUI.Transparent" />
+395-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:32:13-58
+396        <activity
+396-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:33:9-37:61
+397            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
+397-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:34:13-86
+398            android:exported="false"
+398-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:35:13-37
+399            android:label=""
+399-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:36:13-29
+400            android:theme="@style/FirebaseUI.Transparent" />
+400-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:37:13-58
+401        <activity
+401-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:38:9-42:58
+402            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+402-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:39:13-81
+403            android:exported="false"
+403-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:40:13-37
+404            android:label="@string/fui_title_recover_password_activity"
+404-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:41:13-72
+405            android:windowSoftInputMode="adjustResize" />
+405-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:42:13-55
+406        <activity
+406-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:43:9-47:58
+407            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
+407-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:44:13-71
+408            android:exported="false"
+408-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:45:13-37
+409            android:label="@string/fui_sign_in_default"
+409-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:46:13-56
+410            android:windowSoftInputMode="adjustResize" />
+410-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:47:13-55
+411        <activity
+411-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:48:9-52:77
+412            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
+412-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:49:13-71
+413            android:exported="false"
+413-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:50:13-37
+414            android:label="@string/fui_sign_in_with_phone_number"
+414-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:51:13-66
+415            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+415-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:52:13-74
+416        <activity
+416-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:53:9-57:58
+417            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
+417-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:54:13-76
+418            android:exported="false"
+418-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:55:13-37
+419            android:label="@string/fui_title_welcome_back_idp_prompt"
+419-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:56:13-70
+420            android:windowSoftInputMode="adjustResize" />
+420-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:57:13-55
+421        <activity
+421-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:58:9-62:58
+422            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
+422-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:59:13-83
+423            android:exported="false"
+423-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:60:13-37
+424            android:label="@string/fui_title_welcome_back_password_prompt"
+424-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:61:13-75
+425            android:windowSoftInputMode="adjustResize" />
+425-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:62:13-55
+426        <activity
+426-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:63:9-67:58
+427            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
+427-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:64:13-84
+428            android:exported="false"
+428-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:65:13-37
+429            android:label="@string/fui_title_welcome_back_password_prompt"
+429-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:66:13-75
+430            android:windowSoftInputMode="adjustResize" />
+430-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:67:13-55
+431        <activity
+431-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:68:9-73:58
+432            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
+432-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:69:13-82
+433            android:exported="false"
+433-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:70:13-37
+434            android:label=""
+434-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:71:13-29
+435            android:theme="@style/FirebaseUI.Transparent"
+435-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:72:13-58
+436            android:windowSoftInputMode="adjustResize" />
+436-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:73:13-55
+437        <activity
+437-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:74:9-78:58
+438            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
+438-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:75:13-88
+439            android:exported="false"
+439-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:76:13-37
+440            android:label="@string/fui_sign_in_default"
+440-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:77:13-56
+441            android:windowSoftInputMode="adjustResize" />
+441-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:78:13-55
+442        <activity
+442-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:79:9-82:65
+443            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+443-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:80:13-80
+444            android:exported="false"
+444-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:81:13-37
+445            android:label="@string/fui_default_toolbar_title" />
+445-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:82:13-62
+446        <activity
+446-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:83:9-87:48
+447            android:name="com.facebook.FacebookActivity"
+447-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:84:13-57
+448            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+448-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:85:13-96
+449            android:label="@string/app_name" />
+449-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:86:13-45
+450        <activity
+450-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:88:9-100:20
+451            android:name="com.facebook.CustomTabActivity"
+451-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:89:13-58
+452            android:exported="true" >
+452-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:90:13-36
+453            <intent-filter>
+453-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:92:13-99:29
+454                <action android:name="android.intent.action.VIEW" />
+454-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:17-69
+454-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:205:25-66
+455
+456                <category android:name="android.intent.category.DEFAULT" />
+456-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:17-76
+456-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:207:27-73
+457                <category android:name="android.intent.category.BROWSABLE" />
+457-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:17-78
+457-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:208:27-75
+458
+459                <data android:scheme="@string/facebook_login_protocol_scheme" />
+459-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:210:17-213:46
+459-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:213:21-43
+460            </intent-filter>
+461        </activity>
+462
+463        <provider
+463-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:102:9-106:38
+464            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
+464-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:103:13-79
+465            android:authorities="com.quawlebs.drupp.authuiinitprovider"
+465-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:104:13-70
+466            android:exported="false"
+466-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:105:13-37
+467            android:initOrder="90" />
+467-->[com.firebaseui:firebase-ui-auth:4.3.1] /home/flix/.gradle/caches/transforms-2/files-2.1/ba2caea21cb75be32c204550d54f1d0a/jetified-firebase-ui-auth-4.3.1/AndroidManifest.xml:106:13-35
+468
+469        <activity
+469-->[:easylocation] /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-17:56
+470            android:name="com.sachinvarma.easylocation.EasyLocation"
+470-->[:easylocation] /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-69
+471            android:theme="@style/Theme.Transparent" />
+471-->[:easylocation] /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-53
+472
+473        <service android:name="com.sachinvarma.easylocation.EasyLocationService" />
+473-->[:easylocation] /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-84
+473-->[:easylocation] /home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:18-81
+474
+475        <activity
+475-->[com.google.android.libraries.places:places:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/ecf1748c83f5818d4d565c9a1dbcb66f/places-2.2.0/AndroidManifest.xml:14:9-20:20
+476            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+476-->[com.google.android.libraries.places:places:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/ecf1748c83f5818d4d565c9a1dbcb66f/places-2.2.0/AndroidManifest.xml:15:13-91
+477            android:exported="false"
+477-->[com.google.android.libraries.places:places:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/ecf1748c83f5818d4d565c9a1dbcb66f/places-2.2.0/AndroidManifest.xml:16:13-37
+478            android:label="@string/places_autocomplete_label"
+478-->[com.google.android.libraries.places:places:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/ecf1748c83f5818d4d565c9a1dbcb66f/places-2.2.0/AndroidManifest.xml:17:13-62
+479            android:theme="@style/PlacesAutocompleteOverlay"
+479-->[com.google.android.libraries.places:places:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/ecf1748c83f5818d4d565c9a1dbcb66f/places-2.2.0/AndroidManifest.xml:18:13-61
+480            android:windowSoftInputMode="adjustResize" >
+480-->[com.google.android.libraries.places:places:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/ecf1748c83f5818d4d565c9a1dbcb66f/places-2.2.0/AndroidManifest.xml:19:13-55
+481        </activity>
+482
+483        <service
+483-->[:bubbles] /home/flix/AndroidStudioProjects/drupp-android-rider/bubbles/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-42:40
+484            android:name="com.txusballesteros.bubbles.BubblesService"
+484-->[:bubbles] /home/flix/AndroidStudioProjects/drupp-android-rider/bubbles/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-70
+485            android:enabled="true"
+485-->[:bubbles] /home/flix/AndroidStudioProjects/drupp-android-rider/bubbles/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-35
+486            android:exported="false" />
+486-->[:bubbles] /home/flix/AndroidStudioProjects/drupp-android-rider/bubbles/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+487        <!--
+488             FirebaseMessagingService performs security checks at runtime,
+489             but set to not exported to explicitly avoid allowing another app to call it.
+490        -->
+491        <service
+491-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:28:9-34:19
+492            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+492-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:29:13-82
+493            android:exported="false" >
+493-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:30:13-37
+494            <intent-filter android:priority="-500" >
+494-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:342:13-344:29
+495                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+495-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:343:17-78
+495-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/src/main/AndroidManifest.xml:343:25-75
+496            </intent-filter>
+497        </service>
+498        <service
+498-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:35:9-41:19
+499            android:name="com.google.firebase.components.ComponentDiscoveryService"
+499-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:36:13-84
+500            android:directBootAware="true"
+500-->[com.google.firebase:firebase-common:19.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8913dd0d288eef14f4cb02593a50f5c8/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+501            android:exported="false" >
+501-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:37:13-37
+502            <meta-data
+502-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:38:13-40:85
+503                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+503-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:39:17-119
+504                android:value="com.google.firebase.components.ComponentRegistrar" />
+504-->[com.google.firebase:firebase-messaging:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/fae835fac3a24d4479751fdc1ee331a5/jetified-firebase-messaging-20.1.4/AndroidManifest.xml:40:17-82
+505            <meta-data
+505-->[com.google.firebase:firebase-storage:19.1.1] /home/flix/.gradle/caches/transforms-2/files-2.1/87608e12d8d1f12127119de7536182c8/firebase-storage-19.1.1/AndroidManifest.xml:33:13-35:85
+506                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+506-->[com.google.firebase:firebase-storage:19.1.1] /home/flix/.gradle/caches/transforms-2/files-2.1/87608e12d8d1f12127119de7536182c8/firebase-storage-19.1.1/AndroidManifest.xml:34:17-107
+507                android:value="com.google.firebase.components.ComponentRegistrar" />
+507-->[com.google.firebase:firebase-storage:19.1.1] /home/flix/.gradle/caches/transforms-2/files-2.1/87608e12d8d1f12127119de7536182c8/firebase-storage-19.1.1/AndroidManifest.xml:35:17-82
+508            <meta-data
+508-->[com.google.firebase:firebase-database:19.2.1] /home/flix/.gradle/caches/transforms-2/files-2.1/6b81d76eab5a724857047d0fef97d4ae/firebase-database-19.2.1/AndroidManifest.xml:32:13-34:85
+509                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+509-->[com.google.firebase:firebase-database:19.2.1] /home/flix/.gradle/caches/transforms-2/files-2.1/6b81d76eab5a724857047d0fef97d4ae/firebase-database-19.2.1/AndroidManifest.xml:33:17-109
+510                android:value="com.google.firebase.components.ComponentRegistrar" />
+510-->[com.google.firebase:firebase-database:19.2.1] /home/flix/.gradle/caches/transforms-2/files-2.1/6b81d76eab5a724857047d0fef97d4ae/firebase-database-19.2.1/AndroidManifest.xml:34:17-82
+511            <meta-data
+511-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:36:13-38:85
+512                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+512-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:37:17-109
+513                android:value="com.google.firebase.components.ComponentRegistrar" />
+513-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:38:17-82
+514            <meta-data
+514-->[com.google.firebase:firebase-functions:19.0.2] /home/flix/.gradle/caches/transforms-2/files-2.1/833f1295f48077f7a25832ea3706be4d/jetified-firebase-functions-19.0.2/AndroidManifest.xml:18:13-20:85
+515                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+515-->[com.google.firebase:firebase-functions:19.0.2] /home/flix/.gradle/caches/transforms-2/files-2.1/833f1295f48077f7a25832ea3706be4d/jetified-firebase-functions-19.0.2/AndroidManifest.xml:19:17-111
+516                android:value="com.google.firebase.components.ComponentRegistrar" />
+516-->[com.google.firebase:firebase-functions:19.0.2] /home/flix/.gradle/caches/transforms-2/files-2.1/833f1295f48077f7a25832ea3706be4d/jetified-firebase-functions-19.0.2/AndroidManifest.xml:20:17-82
+517            <meta-data
+517-->[com.google.android.gms:play-services-measurement-api:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/e111272e3928297e9f23a018f0a3b4ea/play-services-measurement-api-17.3.0/AndroidManifest.xml:30:13-32:85
+518                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+518-->[com.google.android.gms:play-services-measurement-api:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/e111272e3928297e9f23a018f0a3b4ea/play-services-measurement-api-17.3.0/AndroidManifest.xml:31:17-139
+519                android:value="com.google.firebase.components.ComponentRegistrar" />
+519-->[com.google.android.gms:play-services-measurement-api:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/e111272e3928297e9f23a018f0a3b4ea/play-services-measurement-api-17.3.0/AndroidManifest.xml:32:17-82
+520            <meta-data
+520-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:32:13-34:85
+521                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+521-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:33:17-96
+522                android:value="com.google.firebase.components.ComponentRegistrar" />
+522-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:34:17-82
+523            <meta-data
+523-->[com.google.firebase:firebase-datatransport:17.0.3] /home/flix/.gradle/caches/transforms-2/files-2.1/f5d21f6dea04290d1c64fbd1e630e077/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+524                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+524-->[com.google.firebase:firebase-datatransport:17.0.3] /home/flix/.gradle/caches/transforms-2/files-2.1/f5d21f6dea04290d1c64fbd1e630e077/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+525                android:value="com.google.firebase.components.ComponentRegistrar" />
+525-->[com.google.firebase:firebase-datatransport:17.0.3] /home/flix/.gradle/caches/transforms-2/files-2.1/f5d21f6dea04290d1c64fbd1e630e077/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+526            <meta-data
+526-->[com.google.firebase:firebase-installations:16.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/d9abd6f23f8782eeff98fa5b3dfc65dd/firebase-installations-16.2.0/AndroidManifest.xml:17:13-19:85
+527                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+527-->[com.google.firebase:firebase-installations:16.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/d9abd6f23f8782eeff98fa5b3dfc65dd/firebase-installations-16.2.0/AndroidManifest.xml:18:17-127
+528                android:value="com.google.firebase.components.ComponentRegistrar" />
+528-->[com.google.firebase:firebase-installations:16.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/d9abd6f23f8782eeff98fa5b3dfc65dd/firebase-installations-16.2.0/AndroidManifest.xml:19:17-82
+529        </service>
+530
+531        <provider
+531-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/flix/.gradle/caches/transforms-2/files-2.1/367b9b8b04329fefabe4aab9faa63d29/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+532            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+532-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/flix/.gradle/caches/transforms-2/files-2.1/367b9b8b04329fefabe4aab9faa63d29/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+533            android:authorities="com.quawlebs.drupp.crashlyticsinitprovider"
+533-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/flix/.gradle/caches/transforms-2/files-2.1/367b9b8b04329fefabe4aab9faa63d29/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+534            android:exported="false"
+534-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/flix/.gradle/caches/transforms-2/files-2.1/367b9b8b04329fefabe4aab9faa63d29/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+535            android:initOrder="90" /> <!-- Needs to be explicitly declared on P+ -->
+535-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/flix/.gradle/caches/transforms-2/files-2.1/367b9b8b04329fefabe4aab9faa63d29/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+536        <uses-library
+536-->[com.google.android.gms:play-services-maps:17.0.0] /home/flix/.gradle/caches/transforms-2/files-2.1/9f264c6b4b772104a5754c0fdf0ae964/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+537            android:name="org.apache.http.legacy"
+537-->[com.google.android.gms:play-services-maps:17.0.0] /home/flix/.gradle/caches/transforms-2/files-2.1/9f264c6b4b772104a5754c0fdf0ae964/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+538            android:required="false" />
+538-->[com.google.android.gms:play-services-maps:17.0.0] /home/flix/.gradle/caches/transforms-2/files-2.1/9f264c6b4b772104a5754c0fdf0ae964/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+539
+540        <activity
+540-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:12:9-14:63
+541            android:name="co.paystack.android.ui.PinActivity"
+541-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:13:13-62
+542            android:theme="@style/Paystack.Dialog.PinEntry" />
+542-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:14:13-60
+543        <activity
+543-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:15:9-17:63
+544            android:name="co.paystack.android.ui.OtpActivity"
+544-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:16:13-62
+545            android:theme="@style/Paystack.Dialog.OtpEntry" />
+545-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:17:13-60
+546        <activity
+546-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:18:9-20:63
+547            android:name="co.paystack.android.ui.AuthActivity"
+547-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:19:13-63
+548            android:theme="@style/Paystack.Dialog.OtpEntry" />
+548-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:20:13-60
+549        <activity
+549-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:21:9-23:64
+550            android:name="co.paystack.android.ui.CardActivity"
+550-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:22:13-63
+551            android:theme="@style/Paystack.Dialog.CardEntry" />
+551-->[co.paystack.android:paystack:3.0.12] /home/flix/.gradle/caches/transforms-2/files-2.1/73cdd28d78a523a599c54ab484c037ec/jetified-paystack-3.0.12/AndroidManifest.xml:23:13-61
+552        <activity
+552-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
+553            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+553-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:25:13-85
+554            android:excludeFromRecents="true"
+554-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:26:13-46
+555            android:exported="true"
+555-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:27:13-36
+556            android:launchMode="singleTask"
+556-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:28:13-44
+557            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+557-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:29:13-102
+558            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+558-->[com.google.firebase:firebase-auth:19.3.2] /home/flix/.gradle/caches/transforms-2/files-2.1/ccff8de7f33ff9a0a7d85f8d11b9fb58/firebase-auth-19.3.2/AndroidManifest.xml:30:13-72
+559
+560        <receiver
+560-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:37:9-44:20
+561            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+561-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:38:13-78
+562            android:exported="true"
+562-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:39:13-36
+563            android:permission="com.google.android.c2dm.permission.SEND" >
+563-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:40:13-73
+564            <intent-filter>
+564-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:41:13-43:29
+565                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+565-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:42:17-81
+565-->[com.google.firebase:firebase-iid:20.1.4] /home/flix/.gradle/caches/transforms-2/files-2.1/e28af564b597369b93d5d3eeddd74c29/firebase-iid-20.1.4/AndroidManifest.xml:42:25-78
+566            </intent-filter>
+567        </receiver>
+568        <receiver
+568-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:29:9-33:20
+569            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+569-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:30:13-85
+570            android:enabled="true"
+570-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:31:13-35
+571            android:exported="false" >
+571-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:32:13-37
+572        </receiver>
+573        <receiver
+573-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:34:9-42:20
+574            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+574-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:35:13-100
+575            android:enabled="true"
+575-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:36:13-35
+576            android:exported="true"
+576-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:37:13-36
+577            android:permission="android.permission.INSTALL_PACKAGES" >
+577-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:38:13-69
+578            <intent-filter>
+578-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:39:13-41:29
+579                <action android:name="com.android.vending.INSTALL_REFERRER" />
+579-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:40:17-79
+579-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:40:25-76
+580            </intent-filter>
+581        </receiver>
+582
+583        <service
+583-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:44:9-47:40
+584            android:name="com.google.android.gms.measurement.AppMeasurementService"
+584-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:45:13-84
+585            android:enabled="true"
+585-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:46:13-35
+586            android:exported="false" />
+586-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:47:13-37
+587        <service
+587-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:48:9-52:72
+588            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+588-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:49:13-87
+589            android:enabled="true"
+589-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:50:13-35
+590            android:exported="false"
+590-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:51:13-37
+591            android:permission="android.permission.BIND_JOB_SERVICE" />
+591-->[com.google.android.gms:play-services-measurement:17.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/7ccb5b83834dc4df2076f344f5b85453/play-services-measurement-17.3.0/AndroidManifest.xml:52:13-69
+592
+593        <provider
+593-->[com.google.firebase:firebase-common:19.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8913dd0d288eef14f4cb02593a50f5c8/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+594            android:name="com.google.firebase.provider.FirebaseInitProvider"
+594-->[com.google.firebase:firebase-common:19.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8913dd0d288eef14f4cb02593a50f5c8/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+595            android:authorities="com.quawlebs.drupp.firebaseinitprovider"
+595-->[com.google.firebase:firebase-common:19.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8913dd0d288eef14f4cb02593a50f5c8/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+596            android:exported="false"
+596-->[com.google.firebase:firebase-common:19.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8913dd0d288eef14f4cb02593a50f5c8/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+597            android:initOrder="100" />
+597-->[com.google.firebase:firebase-common:19.3.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8913dd0d288eef14f4cb02593a50f5c8/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+598
+599        <activity
+599-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+600            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+600-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+601            android:excludeFromRecents="true"
+601-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+602            android:exported="false"
+602-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+603            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+603-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+604        <!--
+605            Service handling Google Sign-In user revocation. For apps that do not integrate with
+606            Google Sign-In, this service will never be started.
+607        -->
+608        <service
+608-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+609            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+609-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+610            android:exported="true"
+610-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+611            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+611-->[com.google.android.gms:play-services-auth:16.0.1] /home/flix/.gradle/caches/transforms-2/files-2.1/d1ede326c964cb1fe7ec9993a500b3fc/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+612
+613        <activity
+613-->[com.google.android.gms:play-services-base:17.1.0] /home/flix/.gradle/caches/transforms-2/files-2.1/df1606e6c711c0dfcbd4fdb69928c70a/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+614            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+614-->[com.google.android.gms:play-services-base:17.1.0] /home/flix/.gradle/caches/transforms-2/files-2.1/df1606e6c711c0dfcbd4fdb69928c70a/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+615            android:exported="false"
+615-->[com.google.android.gms:play-services-base:17.1.0] /home/flix/.gradle/caches/transforms-2/files-2.1/df1606e6c711c0dfcbd4fdb69928c70a/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+616            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+616-->[com.google.android.gms:play-services-base:17.1.0] /home/flix/.gradle/caches/transforms-2/files-2.1/df1606e6c711c0dfcbd4fdb69928c70a/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+617
+618        <service
+618-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/eca183f4f861f8dc6f6ec9006b307a43/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+619            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+619-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/eca183f4f861f8dc6f6ec9006b307a43/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+620            android:exported="false" >
+620-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/eca183f4f861f8dc6f6ec9006b307a43/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+621            <meta-data
+621-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/eca183f4f861f8dc6f6ec9006b307a43/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+622                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+622-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/eca183f4f861f8dc6f6ec9006b307a43/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+623                android:value="cct" />
+623-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/eca183f4f861f8dc6f6ec9006b307a43/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+624        </service>
+625        <service
+625-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/0c34d9e8485a6be86d834a94d60dd2e1/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+626            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+626-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/0c34d9e8485a6be86d834a94d60dd2e1/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+627            android:exported="false"
+627-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/0c34d9e8485a6be86d834a94d60dd2e1/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+628            android:permission="android.permission.BIND_JOB_SERVICE" >
+628-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/0c34d9e8485a6be86d834a94d60dd2e1/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+629        </service>
+630
+631        <receiver
+631-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/0c34d9e8485a6be86d834a94d60dd2e1/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+632            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+632-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/0c34d9e8485a6be86d834a94d60dd2e1/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+633            android:exported="false" />
+633-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/0c34d9e8485a6be86d834a94d60dd2e1/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+634
+635        <provider
+635-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8c7d5eab6a85d778df23e38a567d58d4/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+636            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+636-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8c7d5eab6a85d778df23e38a567d58d4/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+637            android:authorities="com.quawlebs.drupp.lifecycle-process"
+637-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8c7d5eab6a85d778df23e38a567d58d4/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+638            android:exported="false"
+638-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8c7d5eab6a85d778df23e38a567d58d4/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+639            android:multiprocess="true" />
+639-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/flix/.gradle/caches/transforms-2/files-2.1/8c7d5eab6a85d778df23e38a567d58d4/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+640    </application>
+641
+642</manifest>

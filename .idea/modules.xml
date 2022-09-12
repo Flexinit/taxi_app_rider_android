@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/drupp-android-rider.iml" filepath="$PROJECT_DIR$/.idea/drupp-android-rider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/drupp-android-rider.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/drupp-android-rider.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bubbles/drupp-android-rider.bubbles.iml" filepath="$PROJECT_DIR$/.idea/modules/bubbles/drupp-android-rider.bubbles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/libs/easylocation/drupp-android-rider.easylocation.iml" filepath="$PROJECT_DIR$/.idea/modules/app/libs/easylocation/drupp-android-rider.easylocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/drupp-android-rider.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/drupp-android-rider.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/drupp-android-rider.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/drupp-android-rider.library.iml" />
+    </modules>
+  </component>
+</project>

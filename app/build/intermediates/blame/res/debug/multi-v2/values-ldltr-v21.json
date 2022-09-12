@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/flix/AndroidStudioProjects/drupp-android-rider/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/home/flix/.gradle/caches/transforms-2/files-2.1/dce4c4b6d2e6053b533a33d1c50669da/appcompat-1.1.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.quawlebs.drupp",
+    "sha256_cert_fingerprints":
+    ["8B:83:E3:81:92:2A:39:21:8C:57:CC:37:E8:85:82:92:75:1F:2B:56:F0:2A:E3:68:9D:E8:78:42:7A:07:85:DF"]
+  }
+}]

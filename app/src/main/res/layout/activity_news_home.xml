@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/background_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_pattern"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_with_yellow_pattern" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_remove" />
+
+        <ImageView
+            android:id="@+id/news_logo"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/news_background"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_margin_10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drupp_news_logo" />
+
+        <ImageView
+            android:id="@+id/news_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/news_background"
+            android:translationY="0dp" />
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            style="@style/TextView.Black.Mega.Bold"
+            android:layout_above="@id/bottom_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/welcome"
+            android:textSize="40sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_no_thanks"
+                style="@style/Button.Black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:minWidth="48dp"
+                android:minHeight="32dp"
+                android:visibility="gone"
+                android:text="@string/no_thanks" />
+
+            <Space
+                style="@style/SpaceMiniTrim"
+                android:layout_width="10dp" />
+
+            <Button
+                android:id="@+id/btn_access_news"
+                style="@style/Button.Red"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:minWidth="48dp"
+                android:minHeight="32dp"
+                android:text="@string/access_news"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_pattern_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_pattern_height"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_bar_background" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

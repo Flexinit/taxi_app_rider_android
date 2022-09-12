@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:paddingStart="30dp"
+    android:paddingLeft="30dp"
+    android:paddingEnd="30dp"
+    android:paddingRight="30dp">
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:tint="@drawable/nav_item_text_state"
+        app:srcCompat="@drawable/ic_calendar" />
+
+    <TextView
+        android:id="@+id/menu_text"
+        style="@style/TextView.Black.Small"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:text="ListIteam"
+        android:textAlignment="center"
+        android:textColor="@drawable/nav_item_text_state" />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:layout_marginStart="@dimen/margin_large"
+    android:layout_marginTop="@dimen/margin_x_large"
+    android:layout_marginEnd="@dimen/margin_large"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/toolbar_elevation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            style="@style/TextView.Black.Small.Bold"
+            android:layout_marginStart="@dimen/margin_small"
+            android:text="@string/order_id" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_small"
+            android:showDividers="beginning|middle|end"
+            android:stretchColumns="0.5,2">
+
+            <View
+                android:layout_height="@dimen/separator_min_height"
+                android:background="@color/colorDarkGrey" />
+
+            <TableRow
+                android:divider="@drawable/table_divider"
+                android:showDividers="middle|beginning|end">
+
+                <TextView
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_column="1"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:padding="5dp"
+                    android:text="@string/product" />
+
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    style="@style/TextView.Black.Small"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    tools:text="@string/name" />
+            </TableRow>
+
+
+            <View
+                android:layout_height="@dimen/separator_min_height"
+                android:background="@color/colorDarkGrey" />
+
+            <TableRow
+                android:divider="@drawable/table_divider"
+                android:showDividers="middle|beginning|end">
+
+                <TextView
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_column="1"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:padding="5dp"
+                    android:text="@string/status" />
+
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/TextView.Black.Small"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    tools:text="@string/name" />
+            </TableRow>
+
+
+            <View
+                android:layout_height="@dimen/separator_min_height"
+                android:background="@color/colorDarkGrey" />
+
+            <TableRow
+                android:divider="@drawable/table_divider"
+                android:showDividers="middle|beginning|end">
+
+                <TextView
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_column="1"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:padding="5dp"
+                    android:text="@string/total" />
+
+
+                <TextView
+                    android:id="@+id/source"
+                    style="@style/TextView.Black.Small"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    tools:text="@string/name" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_height="@dimen/separator_min_height"
+                android:background="@color/colorDarkGrey" />
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+

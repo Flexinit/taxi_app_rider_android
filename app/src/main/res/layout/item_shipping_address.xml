@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_padding_10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/tv_complete_name"
+                style="@style/TextView.Black.Small"
+                tools:text="@string/dummy_bus_passenger" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_complete_address"
+            style="@style/TextView.Black.Small"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            tools:text="@string/dummy_bus_passenger" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/TextView.Black.Small"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            tools:text="@string/dummy_bus_passenger" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

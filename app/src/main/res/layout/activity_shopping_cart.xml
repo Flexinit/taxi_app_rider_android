@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_checkout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="64dp"
+                android:src="@drawable/whit_shoe" />
+
+            <Space
+                style="@style/SpaceMiniTrim"
+                android:layout_width="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView.Black.Small.Bold"
+                    android:text="@string/dummy_item" />
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:text="@string/details" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="start"
+                        android:text="@string/dummy_price" />
+
+                    <Button
+                        style="@style/Button.Black"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        android:minWidth="96dp"
+                        android:minHeight="24dp"
+                        android:text="@string/shop_now" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="start"
+                android:text="@string/subtotal" />
+
+            <TextView
+                style="@style/TextView.Grey.Small.Bold"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:text="@string/dummy_price" />
+        </RelativeLayout>
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="start"
+                android:text="@string/tax" />
+
+            <TextView
+                style="@style/TextView.Grey.Small.Bold"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:text="@string/dummy_price" />
+        </RelativeLayout>
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_gravity="start"
+                android:text="@string/total" />
+
+            <TextView
+                style="@style/TextView.Grey.Small.Bold"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:text="@string/dummy_price" />
+        </RelativeLayout>
+
+        <Space style="@style/SpaceMiniOverride" />
+
+        <Button
+            style="@style/Button.Black"
+            android:layout_width="match_parent"
+            android:text="@string/checkout"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/silhouetee_black" />
+
+</RelativeLayout>

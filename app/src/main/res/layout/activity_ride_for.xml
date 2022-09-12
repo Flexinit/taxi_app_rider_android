@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.BillActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar_ride_for" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_pattern"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGetRide"
+                style="@style/TextView.Black.Small"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/get_a_ride" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvGetRide"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_x_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:animateLayoutChanges="true"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:cardElevation="@dimen/toolbar_elevation">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:showDividers="beginning|middle|end"
+                        android:stretchColumns="0.5,2">
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/date_" />
+
+
+                            <TextView
+                                android:id="@+id/tv_date"
+                                style="@style/TextView.Black.Small"
+                                android:layout_column="2"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:maxLines="2"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="#FF909090" />
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/time_" />
+
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                style="@style/TextView.Black.Small"
+                                android:layout_column="2"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/activity_margin_10"
+                                android:maxLines="2"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="#FF909090" />
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/driver_name_" />
+
+
+                            <TextView
+                                android:id="@+id/tv_driver_name"
+                                style="@style/TextView.Black.Small"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+
+
+                        </TableRow>
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="#FF909090" />
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/vehicle_model_" />
+
+
+                            <TextView
+                                android:id="@+id/tv_vehicle_model"
+                                style="@style/TextView.Black.Small"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+
+
+                        </TableRow>
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="#FF909090" />
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/vehicle_number" />
+
+
+                            <TextView
+                                android:id="@+id/tv_vehicle_number"
+                                style="@style/TextView.Black.Small"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+
+
+                        </TableRow>
+
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="#FF909090" />
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/from" />
+
+
+                            <TextView
+                                android:id="@+id/tv_from"
+                                style="@style/TextView.Black.Small"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="4"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+
+
+                        </TableRow>
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="#FF909090" />
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/to" />
+
+                            <TextView
+                                android:id="@+id/tv_to"
+                                style="@style/TextView.Black.Small"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="4"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+                        </TableRow>
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="#FF909090" />
+
+                        <TableRow
+                            android:divider="@drawable/table_divider"
+                            android:showDividers="middle">
+
+                            <TextView
+                                style="@style/TextView.Black.Small.Bold"
+                                android:layout_column="1"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_marginEnd="@dimen/margin_large"
+                                android:padding="5dp"
+                                android:text="@string/fare" />
+
+
+                            <TextView
+                                android:id="@+id/tv_bill_amount"
+                                style="@style/TextView.Black.Small"
+                                android:layout_marginStart="@dimen/margin_large"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                tools:text="@string/name" />
+
+
+                        </TableRow>
+
+                        <View
+                            android:layout_height="@dimen/separator_min_height"
+                            android:background="@color/colorSeparator" />
+
+
+                    </TableLayout>
+
+
+                    <Button
+                        android:id="@+id/accept_RideFor"
+                        style="@style/Button.Black.Round"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:minHeight="32dp"
+                        android:text="@string/accept" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_pattern_height"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/african_drupp_pattern" />
+
+    </FrameLayout>
+</RelativeLayout>
+

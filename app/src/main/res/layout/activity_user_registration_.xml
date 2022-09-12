@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAppYellow"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_auth_header" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/TextView.Black.Small"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/join_us_here"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_first_namne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/activity_margin_20"
+            android:hint="@string/first_name_"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/Drupp.TextAppearance"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="16sp"
+            app:backgroundTint="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/et_last_namne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/activity_margin_20"
+            android:hint="@string/last_name_"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/Drupp.TextAppearance"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="16sp"
+            app:backgroundTint="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/TextView_style_phone"
+            android:layout_marginTop="@dimen/margin_large"
+            android:focusable="false"
+            android:inputType="phone"
+            android:textAppearance="@style/Drupp.TextAppearance"
+            android:textColor="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/TextView_style_Email"
+            android:layout_marginTop="@dimen/margin_large"
+            android:hint="@string/email"
+            android:textAppearance="@style/Drupp.TextAppearance" />
+
+        <EditText
+            android:id="@+id/etCity"
+            style="@style/TextView_style_City"
+            android:layout_marginTop="@dimen/margin_large"
+            android:hint="@string/city"
+            android:textAppearance="@style/Drupp.TextAppearance" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/activity_margin_20"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/Drupp.TextAppearance"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="16sp"
+            app:backgroundTint="@color/colorBlack" />
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/activity_margin_20"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/Drupp.TextAppearance"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="16sp"
+            app:backgroundTint="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/edtCoupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/activity_margin_20"
+            android:background="@drawable/box_background_black"
+            android:hint="@string/referal_code"
+            android:padding="@dimen/_10sdp"
+            android:textAppearance="@style/Drupp.TextAppearance"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="16sp"
+            app:backgroundTint="@color/colorBlack" />
+
+        <LinearLayout
+            android:id="@+id/ll_profile_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            android:layout_marginTop="@dimen/margin_x_large"
+            android:layout_marginEnd="@dimen/activity_margin_20"
+            android:background="@drawable/bg_textview_dash_border"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/container_upload_sub_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile_image"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="@dimen/padding_medium"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    style="@style/TextView.White.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/upload_profile_image"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:tint="@color/colorBlack"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_checked" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_terms_conditions"
+                style="@style/TextView_style_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/activity_margin_10"
+                android:layout_weight="1"
+                android:text="@string/by_signing"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                app:buttonTint="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_terms_and_condition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_weight="1"
+                android:text="@string/t_and_c"
+                android:textColor="@color/colorBlack"
+                android:translationX="-15dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/activity_margin_20"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/activity_margin_20"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:backgroundTint="@color/colorRed" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHaveAccount"
+                style="@style/TextView_style_a"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/have_account"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="3dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:includeFontPadding="false"
+                android:text="@string/login_here"
+                android:textAppearance="@style/TextView_style_a"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/footer_layout"
+            layout="@layout/layout_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+

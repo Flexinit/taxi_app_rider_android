@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map_pattern"
+    tools:context=".view.ui.BillActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/toolbar_elevation">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_min_height"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorSeparator" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:showDividers="beginning|middle|end"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/date_" />
+
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/TextView.Black.Small"
+                        android:layout_column="2"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/activity_margin_10"
+                        android:maxLines="2"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/time_" />
+
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        style="@style/TextView.Black.Small"
+                        android:layout_column="2"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/activity_margin_10"
+                        android:maxLines="2"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/from" />
+
+
+                    <TextView
+                        android:id="@+id/tv_source"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="#FF909090" />
+
+                <TableRow
+                    android:divider="@drawable/table_divider"
+                    android:showDividers="middle">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:layout_column="1"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:padding="5dp"
+                        android:text="@string/to" />
+
+                    <TextView
+                        android:id="@+id/tv_destination"
+                        style="@style/TextView.Black.Small"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        tools:text="@string/name" />
+                </TableRow>
+
+
+                <View
+                    android:layout_height="@dimen/separator_min_height"
+                    android:background="@color/colorSeparator" />
+
+
+            </TableLayout>
+
+
+            <TextView
+                style="@style/TextView.Black.Big.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/amount_to_pay" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_small">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/naira_sign" />
+
+                <TextView
+                    android:id="@+id/tv_fare"
+                    style="@style/TextView.Black.Big.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorRed"
+                    android:textSize="32sp"
+                    android:translationX="-15dp"
+                    android:translationY="-2dp"
+                    tools:text="0" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_done"
+                style="@style/Button.Black.Round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large"
+                android:minHeight="32dp"
+                android:text="@string/done" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_pattern_height"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/african_drupp_pattern" />
+
+    </FrameLayout>
+</RelativeLayout>
+

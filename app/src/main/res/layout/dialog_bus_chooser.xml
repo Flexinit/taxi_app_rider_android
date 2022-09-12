@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_common" />
+
+    <EditText
+        android:id="@+id/et_search_bus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@id/ib_sort"
+        android:background="@drawable/edittext_bordered"
+        android:drawableEnd="@drawable/ic_search_black_24dp"
+        android:inputType="text">
+    </EditText>
+
+    <ImageButton
+
+        android:id="@+id/ib_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/activity_margin_15"
+        android:background="?selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/ic_ascending_sort" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_pattern"
+        android:layout_below="@id/et_search_bus"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/container_with_black_border"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_margin_10">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_bus_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:id="@+id/container_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView.Black.Medium.Bold"
+                android:layout_gravity="center"
+                android:text="@string/sorry_no_bus_at_this"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_margin_10"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/drupp_logo"
+                android:tint="@color/colorBlack"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_pattern_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_pattern_height"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drupp_pattern_7" />
+
+    </FrameLayout>
+</RelativeLayout>

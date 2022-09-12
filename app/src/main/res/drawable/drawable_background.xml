@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/african_drupp_pattern"
+            android:tileMode="clamp" />
+    </item>
+</layer-list>

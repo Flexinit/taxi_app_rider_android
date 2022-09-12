@@ -1,0 +1,842 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Drupp</string>
+
+    // splash screen
+    <string name="tag_line">No Bar. Just Better</string>
+    <string name="get_started">Lets get you started</string>
+    <string name="phone_num">+234 phone number</string>
+
+    // verification activity
+    <string name="resend_code">
+        <u>Resend Code</u>
+    </string>
+    <string name="default_phone_number">+49 157 70689145</string>
+    <string name="tv_please_enter_otp">Please enter the verification code sent to: \n +%1$d-%2$s</string>
+    <string name="verif_code">Verification Code</string>
+
+    // driver registration activity
+    <string name="terms_condition">Terms and Condition</string>
+    <string name="terms_condition_noUnderline">Terms and Conditions</string>
+    <string name="login">
+        <u>
+            LogIn
+        </u>
+    </string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="have_account">Already have an account?</string>
+    <string name="enter_details">Enter your details</string>
+    <string name="by_signing">By signing up, you agree to our <u>Terms and Conditions</u>.</string>
+    <string name="t_and_c"><u>Terms and Conditions</u></string>
+    // home_user
+    <string name="title_activity_ride_">Ride_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="emergency">Emergency</string>
+
+    <string name="departure">From</string>
+    <string name="destination">To</string>
+    <string name="pool_ride">Pool Ride</string>
+    <string name="single_ride">Single Ride</string>
+    <string name="with_one">With one</string>
+    <string name="with_two">With two</string>
+    <string name="with_three">With three</string>
+    <string name="with_one_10">With one ₦10</string>
+    <string name="with_two_5">With two ₦5</string>
+    <string name="with_three_3_3">With three ₦3.3</string>
+    <string name="ride_now">Ride Now</string>
+    <string name="ride_later">Ride Later</string>
+    <string name="schedule_ride">Schedule Ride</string>
+    <string name="schedule_a_ride">Schedule a Ride</string>
+    <string name="completed_rides">Trip History</string>
+    <string name="completed_rides_label">Completed Rides</string>
+    <string name="post_rides">Post Rides</string>
+    <string name="payments">Payments</string>
+    <string name="shoping">Shopping</string>
+    <string name="newsFeeds">News Feeds</string>
+    <string name="support">Support</string>
+    <string name="legal">Legal</string>
+    <string name="refferal">Referral</string>
+    <string name="settings">Settings</string>
+    <string name="_notification">Notification</string>
+    <string name="naira">₦ </string>
+    <string name="tnc">Terms and Condition</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="new_driver">New User? Sign Up Here </string>
+    <string name="referal_code">Referral Code (Optional)</string>
+    <string name="jhon_gmail_com">jhon@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="upload_profile_image">+Upload Profile Image (Optional)</string>
+    <string name="mobile_number">Mobile</string>
+    <string name="_7832552256">7832552256</string>
+    <string name="jhon_smith"> %1$S</string>
+    <string name="jhon_smith_name">Jhon Smith</string>
+    <string name="enter_pickup_location">Enter Pickup</string>
+    <string name="type_of_driver_you_want_to_ride_with">Type of driver you want to ride with-</string>
+    <string name="chatty">Chatty</string>
+    <string name="conversational_quit_indifferent">Conversational Quit Indifferent</string>
+    <string name="write_your_preferences_here">Write your preferences here.</string>
+    <string name="indore">Indore</string>
+    <string name="preference">Preference</string>
+    <string name="done">Done</string>
+    <string name="number_of_co_riders_you_want">Number of co-riders you want-</string>
+    <string name="setting">Settings</string>
+    <string name="vehicle_type">Vehicle type:</string>
+    <string name="driver_type">Driver type:</string>
+    <string name="driver_type_">Driver type</string>
+
+    // user setting
+    <string name="english">English</string>
+    <string name="shopping">Shop</string>
+    <string name="news_feed">News</string>
+    <string name="yoruba">Yoruba</string>
+
+    // custom alert dailog
+    <string name="text_adv_shopping1">Want to utilize your time?\nShop with us</string>
+    <string name="text_adv_shopping2">Shop with us</string>
+
+    // news
+    <string name="default_news_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+
+Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+
+iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla.iscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
+   </string>
+
+    <string name="news_headline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+
+
+    <string name="user_id">User Id</string>
+    <string name="coupon_number">Coupon Code</string>
+    <string name="name_u">Name</string>
+    <string name="date_added">Date</string>
+
+    // ride on
+    <string name="drupp_media">Drupp Media</string>
+    <string name="your_ride_is_in_progress">Welcome %1$s, your ride is in progress</string>
+    <string name="driver">(Driver)</string>
+    <string name="_537">537</string>
+    <string name="rides_completed">537 \nRides Completed</string>
+    <string name="_3_8" />
+    <string name="rating">3.8* \nRating</string>
+    <string name="rating2">3.8</string>
+    <string name="_79" />
+    <string name="positive_review">79% \nPositive Review</string>
+    <string name="cab_number">Cab Number</string>
+    <string name="micro">Micro</string>
+    <string name="without_ac">Regular</string>
+    <string name="with_ac">Luxury</string>
+    <string name="bus">Bus</string>
+    <string name="mini">Mini</string>
+    <string name="sedan">Sedan</string>
+    <string name="alto_k10">Alto k10</string>
+    <string name="_support">Support</string>
+    <string name="send_cab_details_to_your_contact">Share Cab\nDetails</string>
+    <string name="rate_review_now">Rate / Review Now</string>
+    <string name="contact">Contact</string>
+    <string name="mp_09_ab_1455">MP 09 AB 1455</string>
+    <string name="cab_type">Cab Type</string>
+
+    <!--news dialog-->
+    <string name="getting_bored">Getting Bored?</string>
+    <string name="increase_your_knowledge_with_latest_news_now">Increase your knowledge with latest NEWS now.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--notification-->
+    <string name="notification">Notifications</string>
+    <string name="clear"><u>Clear</u></string>
+    <string name="notificatio_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.In scelerisque sem at dolor. Maecenas mattis.</string>
+    <string name="_1_hour_ago">at %1$s</string>
+    <string name="you_have_recieved_5_new_compliments">You have received 5 new compliments</string>
+    <string name="_news_feed">News Feed</string>
+    <string name="news">News</string>
+
+    // cancel ride
+    <string name="add_reason_to_cancel_the_ride">Add reason to cancel the ride</string>
+    <string name="unable_to_contact_the_user">Unable to contact the Driver</string>
+    <string name="user_denied_coming">Driver denied coming</string>
+    <string name="user_location_is_far_away">Driver location is far away</string>
+    <string name="my_reason_is_not_listed">My reason is not listed</string>
+
+    // cancel ride popup
+    <string name="cancel_ride">Cancel ride</string>
+    <string name="don_t_cance">Don\'t Cancel</string>
+    <string name="capacity">Capacity</string>
+    <string name="fare">Fare</string>
+    <string name="per_minute_wait_time">Per minute wait time</string>
+    <string name="_4_people">4 People</string>
+    <string name="_4_55">$4.55</string>
+    <string name="_0_55">$0.55</string>
+    <string name="confirm_go">Confirm Go</string>
+    <string name="source">Source</string>
+    <string name="_destination">Destination</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="the_driver_has_arrived_at_your_location">Your Driver has arrived at your location. It\'s time to move.</string>
+
+    // payments
+    <string name="payment_options">Payment Options</string>
+
+    // privacy policy
+    <string name="_privacy_policy">Privacy Policy</string>
+    <string name="lorium_ipsum">Lorium Ipsum</string>
+    <string name="default_privacy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+        Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.\n \n Fusce nec tellus sed augue semper porta.
+        Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. \n \nCurabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. </string>
+
+    <!--rate driver-->
+    <string name="rate_your_driver_now">Rate your driver %1$s now</string>
+    <string name="rate_your_coriders_now">Rate your Co-Riders</string>
+    <string name="rate_later">Rate Later</string>
+    <string name="dewas">Dewas</string>
+    <string name="__source">From:</string>
+    <string name="__destination">To:</string>
+    <string name="skip">Skip</string>
+
+    <!--ride dailog-->
+    <string name="fare_pop_up">Fare: ₦%1$s</string>
+    <string name="view">View</string>
+    <string name="ride_for_abuja">Ride for</string>
+    <string name="ride_details_updates">Ride details updated</string>
+
+    <string name="_06_june_2019">Date: %1$s</string>
+    <string name="content_ride_scheduled">Your ride has been scheduled.Driver details will be shared 15 minutes before your pickup time.</string>
+    <string name="ride_scheduled">Ride Scheduled</string>
+    <string name="ride_status">Ride Status</string>
+    <string name="ride_accepted_now">Ride Accepted Now</string>
+    <string name="ridelater_accepted">Your ride has been accepted by %1$s.</string>
+    <string name="__support">Support</string>
+    <string name="add_money"><u>Add Money</u></string>
+    <string name="default_card_number">0000 0000 0000 0000</string>
+    <string name="send">Send</string>
+    <string name="scheduled_rides">Scheduled Rides</string>
+    <string name="no_scheduled_rides">You have no scheduled rides</string>
+    <string name="today">Today</string>
+    <string name="lastride">Most recent ride</string>
+    <string name="tommorow">Tomorrow</string>
+    <string name="ride_history">Ride History</string>
+    <string name="ride_details">Ride Details</string>
+    <string name="ride_time">Ride Time</string>
+    <string name="edit_ride_details">Edit Ride Details</string>
+    <string name="_3_april_2019_5_20_am">3 April 2019,5:20 AM</string>
+    <string name="delivering_to">Delivering to</string>
+    <string name="top_products">Top Products</string>
+    <string name="shop_now">Shop Now</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+
+    /**/
+    <string name="time__">Time:</string>
+    <string name="thank_you_for_riding_with">Thank you for riding with Drupp!</string>
+    <string name="ride_finish">Ride Finish</string>
+    <string name="discount">$5.2 discount applied</string>
+    <string name="dollar">$49.99</string>
+    <string name="comment_hint">Your comments here (optional).</string>
+    <string name="address">Pipliya Rau (Indore)</string>
+    <string name="hint_filter">Filter</string>
+    <string name="acc_details">Add Account Details</string>
+    <string name="wallet">Wallet</string>
+    <string name="card_name">Name on Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_month">Exp.Month</string>
+    <string name="month_hint">MM/YY</string>
+    <string name="expiry_year">Exp.Year</string>
+    <string name="cvv">CVV</string>
+    <string name="hint_cvv">0931</string>
+    <string name="zip">Zip Code</string>
+    <string name="hint_zip">123456</string>
+    <string name="cancel" tools:override="true">Cancel</string>
+    <string name="pay">Pay</string>
+    <string name="message_hint">Type a message…</string>
+    <string name="frg_pass"><u>Forgot Password?</u></string>
+    <string name="no_acc">Don\'t have a account?</string>
+    <string name="get_a_ride">Get a ride to %1$s</string>
+    <string name="fare_val">Fare: $5.12</string>
+    <string name="cab_confirmed">Your driver is on the way.</string>
+    <string name="model">Model</string>
+    <string name="sub">SubTotal</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="help">How can we help?</string>
+    <string name="hint_search_support">e.g. fare information,car types…</string>
+    <string name="resend_rec">Resend Receipt</string>
+    <string name="misconduct">Driver Misconduct</string>
+    <string name="lost_item">Lost an item</string>
+    <string name="longer_route">Driver took a longer route</string>
+    <string name="cancel_fee">Ride cancellation fee</string>
+    <string name="type_here">Type here</string>
+    <string name="snd_qry">Send Query</string>
+    <string name="extra_details">Extra details</string>
+    <string name="amount_paid">Amount Paid:</string>
+    <string name="submit">Submit</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="pref">Select Preferences</string>
+    <string name="profile">Profile</string>
+    <string name="your_bill">Your Bill</string>
+    <string name="ride_canceled_text">Sorry, Driver has cancelled ride. Please request again.</string>
+    <string name="cancel_ride_text">Are you sure you want to cancel the ride?</string>
+    <string name="emergency_text">Your details have been sent to admin.</string>
+    <string name="your_ratings">Your Ratings</string>
+    <string name="admin_notified"> SOS sent to admin!</string>
+    <string name="product">Product </string>
+    <string name="by">By:</string>
+    <string name="message">Message:</string>
+    <string name="ok">OK</string>
+    <string name="please_add_a_valid_number">Please enter your valid phone number</string>
+    <string name="lets_go">Let\'s Go</string>
+    <string name="cancle_success">Your ride has been cancelled successfully.</string>
+    <string name="notification_zero">No new notifications</string>
+    <plurals name="notification_number">
+        <item quantity="one">You have %1$d new notification</item>
+        <item quantity="other">You have %1$d new notifications</item>
+    </plurals>
+    <string name="debit_card">Debit Card</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="pay_ammount">Pay $1.72</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="quote">Compact cars,affordable every day</string>
+    <string name="view_profile">View Profile</string>
+    <string name="driver_name">Driver Name: </string>
+    <string name="driver_name_">Driver Name</string>
+    <string name="d_name">%1$s</string>
+    <string name="phone_number">Phone Number</string>
+    <!--<string name="google_maps_key">AIzaSyAGzbD-bWySCHhvpKti_40Jsvti3TljxB8L̥</string>-->
+    <string name="google_maps_key">AIzaSyB9dTj72A3Gb8_dILIvdoOGbh1u3bWwsx0</string>
+    <string name="coriders">Co-Riders</string>
+    <string name="name">Name</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="enjoy">Enjoy the ride!!</string>
+    <string name="co_rider">Hey, %1$s is coming to join your ride from \n <b>%2$s</b> to <b>%3$s</b>.</string>
+    <string name="date">Date: %1$s</string>
+    <string name="ride_date">Date:</string>
+    <string name="complete_phone_number">+%1$s-%2$s</string>
+
+    <string name="time">Time: %1$s</string>
+    <string name="some_error">Some Error</string>
+    <string name="please_give_a_review">please give review for driver</string>
+    <string name="please_fill_all_details">please fill all details</string>
+    <string name="something_went_wrong">something went wrong</string>
+    <string name="please_give_rating">please give rating</string>
+    <string name="pick_up_time">Pickup Time</string>
+    <string name="base_fare">Base Fare</string>
+    <string name="enter_amount_here">Enter Your Amount Here:</string>
+    <string name="driver_ratings">Driver Ratings:</string>
+    <string name="driver_ratings_">Driver Ratings</string>
+    <string name="vehicle_name">Vehicle Name:</string>
+    <string name="vehicle_name_">Vehicle Name</string>
+    <string name="vehicle_model">Vehicle Model: </string>
+    <string name="dummy_data">KOGI commences wok on the River Niger End of the</string>
+    <string name="dummy_time">3hrs ago</string>
+    <string name="message_">Message</string>
+    <string name="call">Call</string>
+    <string name="share">Share</string>
+    <string name="share_via">Share Via</string>
+    <string name="call_driver">Call Driver</string>
+    <string name="star_rating">%1$s</string>
+    <string name="driver_car_model">%1$s</string>
+    <string name="driver_car_number">%1$s</string>
+
+
+    <!--Select Vehicle-->
+    <string name="rate">Rate</string>
+    <string name="compat_cars">Compact cars, Affordable every day</string>
+    <string name="please_select_pool_option">Please Select Pool Ride Option</string>
+    <string name="rate_per_km">₦%1$s per k.m.</string>
+    <string name="rate_per_seat">₦%1$s per seat</string>
+    <string name="searching_for_your_ride">Searching for your ride…</string>
+    <string name="fare_in_naira">₦%1$s</string>
+    <string name="fare_in_float_naira">₦%1$.2f</string>
+    <string name="estimated_fare_in_naira">Estimated Fare : ₦%1$s</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="fare_">Fare: ₦%1$s</string>
+    <string name="try_another_place">Try Another Place</string>
+    <string name="please_enter_pickup_location">Please Enter Pickup Location</string>
+    <string name="please_enter_preference_message">Please Enter Preference Message</string>
+    <string name="available">Available</string>
+    <string name="ride_posted_successfully">Ride posted successfully</string>
+    <string name="destination_changed">Destination Changed</string>
+    <string name="ride_accepted">Ride Accepted</string>
+    <string name="silent">Silent</string>
+    <!--Manifest-->
+    <string name="filter_view_live_location">Live Location</string>
+    <string name="auto_detect_location">Auto Detect Location</string>
+    <string name="drupp_wallet">Drupp Wallet</string>
+    <string name="wallet_balance">Wallet balance: ₦%1$s</string>
+    <string name="wallet_balance_label">Wallet balance</string>
+
+    <string name="add_wallet_money">+Add Wallet Money</string>
+    <string name="upload_profile_pic">+Upload Profile Picture (Optional)</string>
+    <string name="image_uploaded_successfully">Image Uploaded Successfully</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_mobile_no">Please enter mobile no.</string>
+    <string name="last_name">Last Name:</string>
+    <string name="first_name">First Name:</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="full_name">%1$s %2$s</string>
+    <string name="profile_updated_successfully">Profile updated successfully</string>
+    <string name="add_credit_debit_card">Add a Credit/Debit Card</string>
+    <string name="cash">Cash</string>
+    <string name="net_banking">Banking</string>
+    <string name="drupp_shop">Drupp Shop</string>
+    <string name="logout">Log Out</string>
+    <string name="wallet_balance_0">Wallet balance: ₦%1$s</string>
+    <string name="expiry_date">%1$s/</string>
+    <string name="please_pay_cash">Please pay your driver in cash once your trip ends. The fare will be displayed on your driver\'s device. You can also check it on your app.</string>
+    <string name="welcome_to_drupp_shopping">Welcome To \nDrupp Shopping</string>
+    <string name="mens">Men\'s</string>
+    <string name="womens">Women\'s</string>
+    <string name="cart">Cart</string>
+    <string name="dummy_item">Shoe</string>
+    <string name="details">Details</string>
+    <string name="dummy_price">$1.57</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="price">PRICE</string>
+    <string name="made_in">MADE IN</string>
+    <string name="dummy_country">India</string>
+    <string name="contact_seller">Contact of Seller</string>
+    <string name="dummy_country_seller">Indore,777777777</string>
+    <string name="select">Select</string>
+    <string name="free_shipping_for_indore">Free shipping for Indore (5 days)</string>
+    <string name="size">Size</string>
+    <string name="small">S</string>
+    <string name="medium">M</string>
+    <string name="large">L</string>
+    <string name="color">color</string>
+    <string name="blue">blue</string>
+    <string name="red">red</string>
+    <string name="otp">Use OTP: %1$d.</string>
+    <string name="session_expired">Session has expired!\nLog in again</string>
+    <string name="please_sign_in_again">Please sign in again</string>
+    <string name="otp_in_ride">Share the <b>OTP</b> with the driver: %1$d</string>
+    <string name="delivery">DELIVERY</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="mastercard_visa_by_post">Mastercards, visa, Pay Post</string>
+    <string name="expiry">Expiry</string>
+    <string name="hint_mm">MM / YY</string>
+    <string name="promotion_code">PROMOTION CODE</string>
+    <string name="enter_code">Enter code</string>
+    <string name="apply">apply</string>
+    <string name="original_price">Original Price</string>
+    <string name="discount_">Discount</string>
+    <string name="shipping_ups">Shipping UPS first class</string>
+    <string name="dummy_price_">USD 12.05</string>
+    <string name="total_price">TOTAL PRICE</string>
+    <string name="pay_0">PAY $87.05</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="zip_postal_code">ZIP / Postal Code</string>
+    <string name="cont">Continue</string>
+    <string name="top_purchased">Top purchased</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="dummy_place">pipliya rao (Indore)</string>
+    <string name="is_driver_courteous">Driver was courteous</string>
+    <string name="is_vehicle_clean">Vehicle was clean</string>
+    <string name="is_driver_careful">Driver was careful</string>
+    <string name="please_check_terms_and_condition">Check Terms and Conditions (Box) please.</string>
+    <string name="service_not_available">Sorry, Drupp is not available for that selected location</string>
+    <string name="invalid_lat_long_used">Invalid Location</string>
+    <string name="no_address_found">No Address Found</string>
+    <string name="enter_home_address">Enter Home Address</string>
+    <string name="personal_place_to">Personal places will be used across Drupp for personalized recommendations</string>
+    <string name="add_new_home">Add Home</string>
+    <string name="set_home_address">Set Home Address</string>
+    <string name="set_work_address">Set Work Address</string>
+    <string name="enter_work_address">Enter Work Address</string>
+    <string name="home">Home</string>
+    <string name="add_new_work">Add Work</string>
+    <string name="enter_drop_location">Enter Drop Location</string>
+    <string name="home_address">Home(%1$s)</string>
+    <string name="work_address">Work(%1$s)</string>
+    <string name="search_complete_address">%1$s\n%2$s</string>
+    <string name="work">Work</string>
+    <string name="delete_history">Do you really want to remove this suggestion</string>
+    <string name="delete_title">Delete</string>
+    <string name="estimated_arrival">Arrival\nTime: %1$s</string>
+    <string name="go_to_sign">Go Back to Main Screen</string>
+    <string name="estimated_arrival_0">Arrival\nTime: 0 min</string>
+    <string name="user_posted">Your rides</string>
+    <string name="driver_posted">Driver Posted</string>
+    <string name="ride_finished">Ride Finished</string>
+    <!--Dialogs-->
+    <string name="please_connect_to_your_network">Please connect to your network\nand try again</string>
+    <string name="something_went_wrong_try_again">Something went wrong.\nPlease try again after sometime.</string>
+    <string name="try_again">Try Again</string>
+    <string name="sorry_unable_to_connect">Sorry, we are unable to connect to our servers.We\'ll keep trying.</string>
+    <string name="checkout_great_deals_with_drupp">Check out great deals and prices available on the Drupp Shop.</string>
+    <string name="shop">Shop</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="read">Read</string>
+    <string name="your_ride_has_bee_accepted">%1$s has accepted your ride request</string>
+    <string name="enter_your_card_details">Enter your card details</string>
+    <string name="please_enter_your_card_details">Please enter valid card details</string>
+    <string name="expiry_validity_date">Expiry / Validity Date</string>
+    <string name="pay_something">Pay $%1$s</string>
+    <string name="pay_in_dollar">₦%1$s</string>
+    <string name="invalid_card">Invalid Card</string>
+    <string name="share_eta">Share ETA</string>
+    <string name="payment_successful">Transaction Successful</string>
+    <string name="you_paid_to_">You paid NGN %1$s to %2$s</string>
+    <string name="payment_failed">Transaction failed</string>
+    <string name="payment_reference">Transaction reference : %1$s</string>
+    <string name="try_again_with_other_method">Try again with other method</string>
+    <!--Pentcoast-->
+    <string name="mm_yy">MM/YY</string>
+    <string name="current_bill_amount">Current Bill Amount</string>
+    <string name="_400">₦400</string>
+    <string name="four_dollar">$400</string>
+    <string name="account">Account</string>
+    <string name="card">Card</string>
+    <string name="account_number">Account Number</string>
+    <string name="header_image">Header Image</string>
+    <string name="birthday_of_the_account_holder">Birthday of the account holder</string>
+    <string name="go_back">Go Back</string>
+    <string name="do_you_want_to_cancel_transaction">Do you really want to cancel your transaction?</string>
+    <string name="complete_transaction">Complete transaction</string>
+    <string name="amount">Amount</string>
+    <string name="you_can_now_pay_with_this_saved_card">You can now pay with this card later</string>
+    <string name="proceed_to_add_money">Proceed to Add Money</string>
+    <string name="available_balance">Available Balance ₦%1$s</string>
+    <string name="driver_rating">%1$s*</string>
+    <string name="please_enter_valid_amount">Invalid amount entered.</string>
+    <string name="pay_using_account">Pay Using Bank Account</string>
+    <string name="country_ng">NG</string>
+    <string name="welcome">Welcome</string>
+    <string name="access_news">Access news</string>
+    <string name="no_thank_you">No, Thank You</string>
+    <string name="enter">Enter</string>
+    <string name="query">Query</string>
+    <string name="send_query">Any Query?</string>
+    <string name="location_phone_permission"><![CDATA[Location & Phone permissions required]]></string>
+    <string name="turn_on_location_to_quickly">Turn on Location to quickly see available rides near you. Phone permission will let us verify your account to keep it secure.</string>
+    <string name="are_you_sure_you">Do you really want to leave?</string>
+    <string name="allow_location">Allow</string>
+    <string name="gps_turned_off">GPS turned off</string>
+
+    <string name="allow_drupp_to_turn_on">Allow Drupp to turn on your phone\'s GPS for accurate pickup</string>
+    <string name="turn_on_gps">Turn On Gps</string>
+    <string name="unable_to_charge_your_card">Unable to charge your card. Please check your card details.</string>
+    <string name="your_rides">Your Rides</string>
+    <string name="driver_posted_rides">Driver Posted Rides</string>
+    <string name="i_dont_care">I don\'t care</string>
+    <string name="dont_show_this_message">Do Not Show This Message Again!</string>
+    <string name="eta">ETA: %1$s</string>
+    <string name="dummy_rating">2</string>
+    <string name="please_select_date_and_time">Please select ride date</string>
+    <string name="select_bank_account">Select Your Bank</string>
+    <string name="please_select_bank_account">Please select bank account</string>
+    <string name="please_enter_account_number">Please enter account number</string>
+    <string name="please_enter_birthday_of_account_holder">Please enter birthday of account holder</string>
+    <string name="no_drivers_nearby_to_accept_your_ride">Sorry, we have no nearby drivers at the moment.\nWe will contact you when we find one</string>
+    <!--Chat Suppot-->
+    <string name="enter_message">Enter message</string>
+    <string name="authentication_failed">Authenticatoin failed</string>
+    <string name="book_ride">Book Ride</string>
+    <string name="book_a_ride">Book a Ride</string>
+    <string name="no_rides_yet">You have not taken any ride yet</string>
+    <string name="ride_poste">Ride Booking</string>
+    <string name="your_ride_posted">Your booking is in process,\nYou\'ll be notified soon when a driver accepts your ride</string>
+    <string name="something_went_wrong_with">Something went wrong with token update</string>
+    <string name="something_went_wrong_with_sharing">Something went wrong while sharing</string>
+    <string name="failed_to_upload_file">Failed to attach file</string>
+    <string name="received_a_file">Received a file</string>
+    <string name="date_">Date</string>
+    <string name="time_">Time</string>
+    <string name="route">route</string>
+    <string name="dummy_route">Glory Dome to Mpape</string>
+    <string name="dummy_bus_passenger">BUS 50</string>
+    <string name="dummy_name">JOHN</string>
+    <string name="depart">Departure</string>
+    <string name="dummy_time_am">09:33 AM</string>
+    <string name="join">JOIN</string>
+    <string name="join_a_bus">Join a Bus</string>
+    <string name="share_ride">Share ride</string>
+    <!--Bus Dialog-->
+    <string name="route_name">%1$s to %2$s</string>
+    <string name="bus_number">Bus %1$s</string>
+    <string name="no_of_seats">No. of seats(Extra):</string>
+    <string name="name_1">Passenger 1</string>
+    <string name="name_2">Passenger 2</string>
+    <string name="passenger_3">Passenger 3</string>
+    <string name="name_4">Passenger 4</string>
+    <string name="please_enter_name_of_passengers">Please enter name of passengers</string>
+    <string name="max_4_seats">Max 3 seats per user*</string>
+    <string name="booking_successfully">Booking successful</string>
+    <string name="your_are_on">You\'re on your way!</string>
+    <string name="your_ride_with">Your ride with %1$s has started. Be safe</string>
+
+    <string name="from_">From: </string>
+    <string name="to_">To: </string>
+    <string name="mobile_number_">Mobile Number:</string>
+    <string name="email_">Email:</string>
+    <string name="last_name_">Last Name</string>
+    <string name="first_name_">First Name</string>
+    <string name="book_a_bus">Book a Bus</string>
+    <string name="sorry_no_bus_at_this">Sorry, there are no scheduled Buses.</string>
+    <string name="passenger_1">Passenger Name 1:</string>
+    <string name="passenger_2">Passenger Name 2:</string>
+    <string name="passengers">Passengers:</string>
+    <string name="passengers_">Passengers</string>
+    <string name="departure_time">Departure Time:</string>
+    <string name="bus_number_">Bus</string>
+    <string name="booking_user">Booking User</string>
+    <string name="passenger_in_ride">%1$s</string>
+    <string name="sharing_ticket">Sharing Ticket</string>
+    <string name="extra_seats">Extra Seats:</string>
+    <string name="arrive">Arrival Time</string>
+    <string name="full">Full</string>
+    <string name="please_click_back_again">Please click BACK again to exit</string>
+    <string name="bus_rides">Bus Rides</string>
+    <string name="upcoming_rides">Upcoming Rides</string>
+    <string name="no_of_seats_">No. Of Seats</string>
+    <string name="departure_time_">Departure Time</string>
+    <string name="cancel_booking">cancel booking</string>
+    <string name="are_you_sure_you_want_to_cancel">Are you sure, you want to\ncancel this booking?</string>
+    <string name="booking_cancelled">Booking Cancelled Successfully</string>
+    <string name="pickup_and_drop_location">Pick-up &amp; Drop-off locations cannot be the same. Please check.</string>
+    <string name="your_session_has_expired">Your session has expired.Please Log In Again.</string>
+    <string name="sort">Sort</string>
+    <string name="all_categories">All Categories</string>
+    <!--Item Shop-->
+    <string name="dummy_product">Nike black shoes</string>
+    <string name="price_in_naira">₦ %1$s</string>
+
+    <string name="popular_products">popular products</string>
+    <string name="view_all">view all</string>
+    <string name="category">Category</string>
+    <string name="seller">Seller</string>
+    <string name="buy_now">Buy now</string>
+    <string name="description">Description</string>
+    <string name="product_added_to_cart">%1$s added to cart</string>
+    <string name="dummy_price_tax">₦ 0.00</string>
+    <string name="remove">Remove</string>
+    <string name="removed_from_cart">Removed From Cart</string>
+    <string name="star">*</string>
+    <string name="max_4_products">*Max 4 Quantity Only</string>
+    <string name="add_new_address">+Add New Address</string>
+    <string name="save">Save</string>
+    <string name="full_address">%1$s,%2$s,%3$s,%4$s-%5$d</string>
+    <string name="select_address">Select Address</string>
+    <string name="go_to_cart">Go to cart</string>
+    <string name="your_payment_of_amount">Your payment of amount NGN %1$s is successful</string>
+    <string name="please_select_address">Select a address to continue</string>
+    <string name="order_placed_successfully">Order Placed Successfully</string>
+    <string name="your_cart_is_empty">Your cart is empty!</string>
+    <string name="are_you_sure_you_want_to_remove">Are you sure you want to remove this product?</string>
+    <string name="remove_product">Remove Product</string>
+    <string name="my_orders">My Orders</string>
+    <string name="registration_successfull_sign_in">Registration successful</string>
+    <string name="sort_by">Sort By</string>
+    <string name="popularity">Popularity</string>
+    <string name="price_low_to_high">Price - Low to High</string>
+    <string name="price_high_to_low">Price - High to Low</string>
+    <string name="newest_first">Newest First</string>
+    <string name="you_can_rate_again_after_ride_finish">You can rate again once you reach your destination</string>
+    <string name="sorry_no_results_found">Sorry, no results found</string>
+    <string name="no_results_found">No results found</string>
+    <string name="filter_applied">Filter Applied Successfully</string>
+    <string name="refer_app">Refer App</string>
+    <string name="refer_history">Referred History</string>
+    <string name="referred_history"><u>Referred History</u></string>
+    <string name="refer_friends_earn">Refer Your friends. Earn points</string>
+    <string name="saved_locations">Saved Locations</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="order_id">Order - #%1$d</string>
+    <string name="status">Status</string>
+    <string name="ordered">ordered</string>
+    <string name="shipped">shipped</string>
+    <string name="delivered">delivered</string>
+    <string name="canceled">Canceled</string>
+    <string name="no_current_orders">You have no current orders</string>
+    <string name="product_and_more">%1$s and more</string>
+    <string name="items">Items</string>
+    <string name="product_quantity">Qty : %1$s</string>
+    <string name="shipping">Shipping</string>
+    <string name="order_details">Order Details</string>
+    <string name="saved_cards">Saved Cards</string>
+    <string name="card_number_saved">**** **** **** %1$s</string>
+    <string name="payment_in_progress">Payment is in progress…</string>
+    <string name="donot_press_back_button">(Do not press back button.)</string>
+    <string name="transaction_is_in_progress">Transaction is in progress</string>
+    <string name="out_of_stock">Out Of Stock</string>
+    <string name="enter_otp">To confirm that you own this account, kindly enter the OTP sent to your phone</string>
+    <string name="bank_name">Bank Name:</string>
+    <string name="reference">Reference:</string>
+    <string name="enter_otp_hint">OTP Code</string>
+    <string name="money_added_successfully">Money Added Successfully in the Wallet</string>
+    <string name="completed_rides_total">%1$s Completed Rides</string>
+    <string name="dynamic_text">%1$s</string>
+    <string name="thank_you">Thank You</string>
+    <string name="your_query_has_been_sent">Your query has been sent to the Admin and one of our Agents/Representatives will contact you soon!!</string>
+    <string name="please_select_either_yes_or_no">Please select either yes or no</string>
+    <string name="please_enter_source">Please enter source</string>
+    <string name="please_enter_destination">Please enter destination</string>
+    <string name="ride_canceled">Ride Cancelled</string>
+    <string name="ride_completed">Ride Completed</string>
+    <string name="please_enter_city">Please enter city</string>
+    <string-array name="seats">
+        <item>None</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="get_help_with_your_last_booking">Get help on your last booking</string>
+    <string name="join_us_here">Join us here!</string>
+    <string name="completed">Completed</string>
+    <string name="card_added_successfully">Card Added Successfully</string>
+    <!--Trip History-->
+    <string name="offline">Offline</string>
+    <string name="no_rides">It\'s empty</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="add_payment_method">Add Payment Method</string>
+    <string name="enter_destination">Enter Destination</string>
+    <string name="now">Now</string>
+    <string name="book">Book</string>
+    <string name="pickup">Pick Up</string>
+    <string name="destination_title">Destination</string>
+    <string name="source_cant_be_empty">Where are you now? Please enter your location. </string>
+    <string name="destination_cant_be_empty">Where are you going? Enter Destination please..</string>
+    <string name="welcome_text_home">Hi %1$s, where are you going?</string>
+    <string name="favorites">Favorites</string>
+    <string name="add_a_favorite_location">Add a favorite location</string>
+    <string name="year">Year</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="hour">Hour</string>
+    <string name="minute">Minute</string>
+    <string name="second">Second</string>
+    <string name="find_a_bus">Find a Bus</string>
+    <string name="oldest_to_newest">Oldest to Newest</string>
+    <string name="_date">Date</string>
+    <string name="payment_information">Payment Information</string>
+    <string name="paid_to">Paid To</string>
+    <string name="rideshare_request_status">Ride request status</string>
+    <string name="ride_confirmed_by_driver">Ride confirmed by driver</string>
+    <string name="ride_rejected_by_driver">Ride rejected by driver</string>
+    <string name="source_picker">source picker </string>
+    <string name="transaction_reference">Transaction Reference</string>
+    <string name="news_category">%1$s-%2$s</string>
+    <string name="keke">Keke</string>
+    <string name="amount_estimated">Amount Estimated</string>
+    <string name="kindly_rate_the_ride">Please rate your riding experience!</string>
+    <string name="vehicle_model_">Vehicle Model</string>
+    <string name="vehicle_number">License Plate Number</string>
+    <string name="vehicle_type_">Vehicle Type</string>
+    <string name="amount_to_pay">Amount To Pay</string>
+    <string name="amount_in">Amount\n%1$s</string>
+    <string name="payment_option">Payment Method\n%1$s</string>
+    <string name="full_time">%1$s %2$s</string>
+    <string name="go">Go</string>
+    <string name="vehicle_details">%1$s %2$s %3$s</string>
+    <string name="price_in_naira_with_method">₦%1$s(%2$s)</string>
+    <string name="per_km_charge">Per KM Charge</string>
+    <string name="fare_breakdown">Fare Breakdown</string>
+    <string name="distance_travelled">Distance Travelled(KM)</string>
+    <string name="in_km">%1$s KM</string>
+    <!--Chat-->
+    <string name="type_message_here">Type message here</string>
+    <string name="msg_sms_exceeeded">The SMS quota for the project has been exceeded</string>
+    <string name="invalid_verification_code">The verification code entered was invalid</string>
+    <string name="failed_to_verify_code">Failed to verify code, try again later</string>
+    <string name="number_verification_successful">Number verification successful.</string>
+    <string name="code_has_been_sent_successfully">Code has been sent successfully</string>
+    <string name="enter_verification_code_first">Enter verification code first</string>
+
+    <!--Redesign new strings-->
+    <string name="welcome_here">Welcome here!</string>
+    <string name="please_sign_in">Please sign in</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_user_sing">New user? <b>Sign Up Here</b></string>
+    <string name="login_here"><u>Log In here</u></string>
+    <string name="this_week">This week</string>
+    <string name="cancelled_rides">Cancelled Rides</string>
+    <string name="total_rides">Total Rides</string>
+    <string name="password_cannot_be_empty">Password cannot be empty</string>
+    <string name="confirm_password_cannot_be_empty">Confirm password cannot be empty</string>
+    <string name="passwords_must_match">Passwords must match</string>
+    <string name="enter_your_location">Enter your location</string>
+    <string name="enter_your_destination">Enter your destination</string>
+    <string name="your_ride_to">Your ride to %1$s has ended. Please make payment if trip is cash.</string>
+    <string name="driver_description">A very good and experienced driver. Friendly, and very good at his service. Plus, the car is nice too</string>
+    <string name="rides">Rides</string>
+    <string name="distance_away">%1$d kilometres away</string>
+    <string name="arrived_by">Arrived by %1$s</string>
+    <string name="arrived_at">Arrived at %1$s</string>
+    <string name="choose_ride_type">Choose ride type</string>
+    <string name="pick_up_location">Pickup location</string>
+    <string name="number_of_people_you_want_to_ride_with">Number of people you want to ride with:</string>
+    <string name="num_3">3</string>
+    <string name="set_date_and_time"><![CDATA[Set Date & Time]]></string>
+    <string name="with_three_person">With three person:</string>
+    <string name="with_one_person">With one person:</string>
+    <string name="with_one_person_10">₦10</string>
+    <string name="with_two_person">With two person:</string>
+    <string name="with_two_person_5">₦5</string>
+    <string name="with_three_person_3">₦3.33</string>
+    <string name="currency_3">₦ 3.33</string>
+    <string name="minimum_riders_required">Minimum one riders required</string>
+    <string name="please_enter_fare">Please Enter Fare</string>
+    <string name="please_enter_date">Please Enter Date</string>
+    <string name="please_enter_time">Please Enter Time</string>
+    <string name="scheduled">Scheduled</string>
+    <string name="pool_rides_suspended">We are sorry pool rides are suspended <Br> due to COVID-19 pandemic.</Br></string>
+    <string-array name="driver_types">
+        <item>Car Driver</item>
+        <item>Bus Driver</item>
+        <item>Keke Driver</item>
+    </string-array>
+    <string-array name="car_names">
+        <item>Toyota</item>
+        <item>Nissan</item>
+        <item>Volkswagen</item>
+    </string-array>
+
+    <string-array name="car_models">
+        <item>Belta</item>
+        <item>c100</item>
+        <item>Tiguan</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+    </string-array>
+    <string-array name="car_condition">
+        <item>Neat</item>
+        <item>Average</item>
+        <item>Old</item>
+    </string-array>
+    <string-array name="marital_statuses">
+        <item>Married</item>
+        <item>Unmarried</item>
+    </string-array>
+</resources>

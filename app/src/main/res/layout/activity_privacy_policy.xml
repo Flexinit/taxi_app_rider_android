@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bar_background"
+    tools:context=".view.ui.PrivacyPolicyActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar_privacy_policy" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="@dimen/bottom_pattern_height"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/tv_privacy_policy"
+                style="@style/TextView_style_d"
+                android:layout_margin="15dp"
+                android:text="@string/default_privacy_text"
+                android:textColor="@color/dark_grey" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

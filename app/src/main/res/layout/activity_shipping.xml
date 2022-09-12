@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_checkout" />
+
+    <Button
+        android:id="@+id/btn_add_new_address"
+        style="@style/Button.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:paddingStart="@dimen/activity_padding_10"
+        android:paddingEnd="@dimen/activity_padding_10"
+        android:text="@string/add_new_address"
+        android:textAlignment="textStart"
+        app:elevation="@dimen/cardview_default_elevation" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container_total_price"
+        android:layout_below="@id/btn_add_new_address"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_addresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="@dimen/cardview_default_elevation" />
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/container_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginEnd="@dimen/activity_margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Grey.Medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/original_price" />
+
+            <TextView
+                android:id="@+id/tv_original_price"
+                style="@style/TextView.Grey.Medium"
+                tools:text="@string/dummy_price_" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginEnd="@dimen/activity_margin_10"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Grey.Medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/discount_" />
+
+            <TextView
+                android:id="@+id/tv_discount"
+                style="@style/TextView.Grey.Medium"
+                tools:text="@string/dummy_price_" />
+        </LinearLayout>
+
+        <Space style="@style/SpaceMini" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_padding_10">
+
+            <TextView
+                style="@style/TextView.Black.Medium.Bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/total_price" />
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                style="@style/TextView.Black.Medium.Bold"
+                tools:text="@string/dummy_price_" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/Button.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cont" />
+    </LinearLayout>
+
+
+</RelativeLayout>

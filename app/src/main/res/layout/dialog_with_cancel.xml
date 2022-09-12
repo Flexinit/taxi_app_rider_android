@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_large">
+
+    <com.quawlebs.drupp.util.ProgressWheel
+        android:id="@+id/progress_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:matProg_barColor="@color/colorBlack"
+        app:matProg_circleRadius="@dimen/progress_wheel_radius_x"
+        app:matProg_progressIndeterminate="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_loading">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/logo"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:layout_alignParentStart="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:adjustViewBounds="true"-->
+        <!--            android:scaleType="fitCenter"-->
+        <!--            android:src="@drawable/search_logo" />-->
+
+        <com.quawlebs.drupp.util.JJSearchView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+
+        <TextView
+            android:id="@+id/loading_text"
+            style="@style/TextView.Black.Medium"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/searching_for_your_ride"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container_cancel_ride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container">
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_small"
+            android:adjustViewBounds="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/cancel" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:text="@string/cancel"
+            android:translationY="2dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ui.NewsDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_common" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_bottom"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image_news"
+                android:layout_width="match_parent"
+                android:layout_height="248dp"
+                android:layout_margin="2dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/mitt" />
+
+            <TextView
+                android:id="@+id/tv_header"
+                style="@style/TextView.Black.Medium.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_news"
+                android:layout_marginTop="@dimen/margin_medium"
+                tools:text="@string/dummy_price" />
+
+            <TextView
+                android:id="@+id/tv_category_name"
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_header"
+                android:layout_marginTop="@dimen/margin_medium"
+                tools:text="@string/dummy_name" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_category_name"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:textSize="12sp"
+                tools:text="@string/dummy_price" />
+
+            <TextView
+                android:id="@+id/tv_news"
+                style="@style/TextView.Black.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_time"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/default_news_content" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        style="@style/TextView.Grey.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar_pattern"
+        android:layout_centerInParent="true"
+        android:text="@string/drupp_media" />
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drupp_pattern_4" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+

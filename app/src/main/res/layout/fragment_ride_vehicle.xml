@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_select_car"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corners_white_view"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_per_km_fare"
+                style="@style/TextView.White.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/email"
+                tools:visibility="visible" />
+
+            <LinearLayout
+
+                android:id="@+id/cv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_per_km_fare">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/dot_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_circle_green" />
+
+                        <View
+                            android:layout_width="@dimen/separator_min_height"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@color/colorSeparator" />
+
+                        <ImageView
+                            android:id="@+id/red_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_circle_red" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/tv_source"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/enter_pickup_location"
+                            android:paddingEnd="25dp"
+                            android:singleLine="true"
+                            android:textAppearance="@style/TextView.Black.Medium" />
+
+                        <View
+                            android:id="@+id/separator"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/separator_min_height"
+                            android:layout_below="@id/tv_source"
+                            android:background="@color/colorSeparator" />
+
+                        <EditText
+                            android:id="@+id/et_destination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/separator"
+                            android:layout_marginTop="5dp"
+                            android:background="@android:color/transparent"
+                            android:clickable="false"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/enter_destination"
+                            android:paddingEnd="25dp"
+                            android:singleLine="true"
+                            android:textAppearance="@style/TextView.Black.Medium" />
+
+
+                        <Button
+                            android:id="@+id/btn_ride_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/shadow_drawable"
+                            android:drawableTop="@drawable/ic_set_alarm"
+                            android:drawablePadding="5dp"
+                            android:minWidth="48dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/now" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_min_height"
+            android:layout_above="@id/tvCompCars"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorSeparator" />
+
+        <TextView
+            android:id="@+id/tvCompCars"
+            style="@style/TextView.Black.Small"
+            android:layout_below="@id/container_search"
+            android:layout_centerHorizontal="true"
+            android:text="@string/compat_cars"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:id="@+id/par_lin_cars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCompCars"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <LinearLayout
+                android:id="@+id/micro_vehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_car1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@drawable/state_with_circle_white_grey"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_car_right" />
+
+                <Space style="@style/SpaceMicro" />
+
+                <TextView
+
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:text="@string/without_ac"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_without_ac_fare"
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mini_vehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_car2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@drawable/state_with_circle_white_grey"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_car_right" />
+
+                <Space style="@style/SpaceMicro" />
+
+                <TextView
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:text="@string/with_ac"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_with_ac_fare"
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/keke_vehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/image_car3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@drawable/state_with_circle_white_grey"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/ic_tuk_tuk" />
+
+                <Space style="@style/SpaceMicro" />
+
+                <TextView
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:text="@string/keke"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_bus_fare"
+                    style="@style/TextView.Black.Small.Bold"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/groupPoolOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/par_lin_cars"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rb_pool_with_one"
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                android:text="@string/with_one"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioButton
+                android:id="@+id/rb_pool_with_two"
+                style="@android:style/Widget.CompoundButton.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+
+                android:text="@string/with_two"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toEndOf="@id/cb1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_min_height"
+            android:layout_below="@id/groupPoolOption"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorSeparator" />
+
+        <LinearLayout
+            android:id="@+id/container_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupPoolOption"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_15"
+            android:layout_marginEnd="@dimen/activity_margin_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_payment_method"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_cash" />
+
+            <TextView
+                android:id="@+id/tv_payment_method"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/activity_margin_5"
+                android:layout_weight="1"
+                android:text="@string/cash"
+                android:textColor="@color/colorBlack" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_right_arrow" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_book_ride"
+            style="@style/Button.Black.Round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container_payment_method"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/book"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:id="@+id/container_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupPoolOption"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btRideNow"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_button_black"
+                android:text="@string/ride_now"
+                android:textColor="@color/pure_white" />
+
+            <Button
+                android:id="@+id/btRideLater"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_button_grey"
+                android:text="@string/ride_later"
+                android:textColor="@color/pure_white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorBlack"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drupp_pattern_3"
+        android:visibility="gone" />
+
+    <!--<Button-->
+    <!--android:id="@+id/bt_confirm_go1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_below="@id/par_lin_cars"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginStart="15dp"-->
+    <!--android:layout_marginEnd="15dp"-->
+    <!--android:layout_marginBottom="15dp"-->
+    <!--android:background="@drawable/round_corner_button_black"-->
+    <!--android:text="@string/confirm_go"-->
+    <!--android:textColor="@color/pure_white" />-->
+</androidx.cardview.widget.CardView>

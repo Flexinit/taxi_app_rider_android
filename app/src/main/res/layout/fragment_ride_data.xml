@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_selected_car"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corners_white_view"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/elevation_normal"
+    tools:context=".view.ui.ride.RideData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_selected_car"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_car_right"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/tvMini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/without_ac"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/par_lin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:text="@string/capacity" />
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:text="@string/fare" />
+
+                    <TextView
+                        style="@style/TextView.Black.Small.Bold"
+                        android:text="@string/per_minute_wait_time" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_capacity"
+                        style="@style/TextView.Black.Small"
+                        android:text="@string/_4_people"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/tv_fare"
+                        style="@style/TextView.Black.Small"
+                        android:text="@string/_4_55"
+                        android:textColor="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/tv_per_minute_wait_time"
+                        style="@style/TextView.Black.Small"
+                        android:text="@string/_0_55"
+                        android:textColor="@color/grey" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_min_height"
+            android:background="@color/colorSeparator" />
+
+        <LinearLayout
+            android:id="@+id/container_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:layout_marginEnd="@dimen/activity_margin_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_cash" />
+
+            <TextView
+                android:id="@+id/tv_payment_method"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/activity_margin_5"
+                android:layout_weight="1"
+                android:text="@string/cash" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_right_arrow" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_confirm_go2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_corner_button_black"
+            android:text="@string/confirm_go"
+            android:textColor="@color/pure_white" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorBlack"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drupp_pattern_4"
+        android:visibility="gone" />
+
+</androidx.cardview.widget.CardView>
+

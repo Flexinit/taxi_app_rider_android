@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_yellow"
+    android:orientation="vertical"
+    tools:ignore="RtlCompat">
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/layout_auth_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/splash_welcome_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/welcome_here"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_layout" />
+
+    <TextView
+        android:id="@+id/tvGetStarted"
+        style="@style/TextView.Black.Big.Bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/get_started"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/splash_welcome_here"
+        app:layout_constraintTop_toBottomOf="@id/splash_welcome_here" />
+
+    <com.rilixtech.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        app:ccp_defaultNameCode="@string/country_ng"
+        app:ccp_textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@id/phone_number_edt"
+        app:layout_constraintEnd_toStartOf="@id/phone_number_edt"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/phone_number_edt" />
+
+    <EditText
+        android:id="@+id/phone_number_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/roboto_bold"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="#333333"
+        android:textColorHint="@color/grey"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ccp"
+        app:layout_constraintTop_toBottomOf="@id/tvGetStarted" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/phone_number_edt"
+        app:layout_constraintStart_toStartOf="@id/ccp"
+        app:layout_constraintTop_toBottomOf="@id/phone_number_edt" />
+
+    <ImageButton
+        android:id="@+id/btn_sign_in"
+        style="@style/Button.Black.Round"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/ic_circle_red"
+        android:src="@drawable/ic_right_arrow_forward_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_number_edt" />
+
+    <include
+        layout="@layout/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

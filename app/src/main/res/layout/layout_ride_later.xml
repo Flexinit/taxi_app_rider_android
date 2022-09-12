@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pure_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPickupTime"
+            style="@style/TextView_style_d"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:hint="@string/pickup_time"/>
+
+        <Button
+            style="@style/Black_Button"
+            android:layout_below="@id/etPickupTime"
+            android:layout_centerHorizontal="true"
+            android:text="@string/confirm_booking"
+            android:layout_margin="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

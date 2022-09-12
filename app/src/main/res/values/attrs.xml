@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="showText" format="boolean" />
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="subText" format="string" />
+        <attr name="applyToAll" format="boolean" />
+        <attr name="colorToApply" format="color" />
+        <attr name="styleToApply" format="string" />
+        <attr name="textSizeToApply" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="MagicText">
+        <attr name="magic_text" format="string" />
+        <!-- For single Sub String -->
+        <attr name="magic_color" format="color" />
+        <attr name="magic_size" format="integer" />
+        <attr name="magic_style" format="string" />
+        <attr name="magic_substring" format="string" />
+        <!-- For multiple Sub String -->
+        <attr name="magic_multiple_color" format="string" />
+        <attr name="magic_multiple_size" format="string" />
+        <attr name="magic_multiple_style" format="string" />
+        <attr name="magic_multiple_substring" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PaymentView">
+        <attr name="pentecostTheme" format="enum">
+            <enum name="black" value="0" />
+            <enum name="white" value="1" />
+        </attr>
+        <attr name="pentecostBackgroundColor" format="reference|color" />
+        <attr name="pentecostBackgroundDrawable" format="reference" />
+        <attr name="pentecostHeaderTitle" format="reference|string" />
+        <attr name="pentecostHeaderBackgroundDrawable" format="reference" />
+
+        <attr name="pentecostHeaderBorderRadius" format="reference|dimension" />
+
+        <attr name="pentecostHeaderBackground" format="enum">
+            <enum name="show" value="0" />
+            <enum name="hide" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+</resources>

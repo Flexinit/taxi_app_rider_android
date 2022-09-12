@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pure_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_select_car">
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:text="@string/most_popular"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:id="@+id/tvMostPop"/>
+
+        <TextView
+            style="@style/TextView_style_d"
+            android:text="@string/quote"
+            android:layout_below="@id/tvMostPop"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvCompCars"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/par_lin"
+            android:layout_below="@id/tvCompCars">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/car"
+                    app:civ_border_width="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/image_car1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mini"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$4.17"
+                    android:textColor="@color/grey"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/car"
+                    app:civ_border_width="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/image_car2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mini"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$4.17"
+                    android:textColor="@color/grey"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/car"
+                    app:civ_border_width="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/image_car3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mini"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$4.17"
+                    android:textColor="@color/grey"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/confirm_go"
+            android:layout_margin="15dp"
+            android:background="@color/colorBlack"
+            android:textColor="@color/pure_white"
+            android:layout_below="@id/par_lin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.scheduledRides.ScheduledRidesActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar_schedule" />
+
+    <FrameLayout
+        android:id="@+id/fl_bus_rides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_pattern"
+        android:layout_below="@id/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_pattern_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_pattern_height"
+            android:adjustViewBounds="true"
+            android:alpha="0.75"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drupp_pattern_2" />
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bank_details_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_16"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bank_name"
+            style="@style/EditTextStyle"
+            android:layout_gravity="start"
+            android:fontFamily="@font/roboto_regular"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false" />
+
+        <!--<Spinner-->
+        <!--android:id="@+id/bank_name"-->
+        <!--style="@style/EditTextStyle"-->
+        <!--android:inputType="number" />-->
+
+        <EditText
+            android:id="@+id/tv_account_number"
+            style="@style/EditTextStyle"
+            android:layout_marginTop="@dimen/size_16"
+            android:hint="@string/account_number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/tv_account_holder_birthday"
+            style="@style/EditTextStyle"
+            android:layout_marginTop="@dimen/size_16"
+            android:focusable="false"
+            android:hint="@string/birthday_of_the_account_holder"
+            android:inputType="number" />
+
+        <Space style="@style/SpaceMini" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/font_14">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_14"
+                    android:layout_centerInParent="true"
+                    android:indeterminateOnly="true"
+                    android:progressBackgroundTint="@color/colorPayAccentDark"
+                    android:progressTint="@color/colorPayAccent"
+                    android:progressTintMode="screen"
+                    tools:targetApi="lollipop" />
+
+                <Button
+                    android:id="@+id/btn_pay_bank"
+                    style="@style/PaymentButtonBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="@string/pay" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/secure_logo"
+                style="@style/SecureLogo"
+                android:contentDescription="TODO"
+                android:src="@drawable/white_paystack_logo" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

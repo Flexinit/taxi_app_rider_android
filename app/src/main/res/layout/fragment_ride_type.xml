@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rideInfolay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corners_white_view"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/elevation_normal"
+    tools:context=".view.ui.ride.RideType">
+
+
+    <LinearLayout
+        android:id="@+id/parLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/singleRide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_states_drawable"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_single"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_single" />
+
+            <TextView
+                android:id="@+id/tvSingle"
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_below="@id/iv_single"
+                android:layout_centerInParent="true"
+                android:text="@string/single_ride"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/separator_min_height"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGrey" />
+
+        <RelativeLayout
+            android:id="@+id/poolRide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_states_drawable"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_pool"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_pool" />
+
+            <TextView
+                android:id="@+id/tvPool"
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_below="@id/iv_pool"
+                android:layout_centerInParent="true"
+                android:text="@string/pool_ride"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/parLin"
+        android:background="@color/colorBlack"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/parLin"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drupp_pattern_2"
+        android:visibility="gone" />
+</androidx.cardview.widget.CardView>
+

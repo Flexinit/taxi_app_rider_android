@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/top"
+        style="@style/TextView.Black.Medium"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/transaction_is_in_progress" />
+
+    <TextView
+        style="@style/TextView.Grey.Small"
+        android:layout_below="@id/top"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/donot_press_back_button" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pure_white">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:id="@+id/par_lin">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                style="@style/TextView_style_d"
+                android:text="@string/source"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                style="@style/TextView_style_d"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="@string/destination"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView_style_d"
+                android:text="Indore"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                style="@style/TextView_style_d"
+                android:textColor="@color/grey"
+                android:text="Dewas"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@id/par_lin"
+        android:id="@+id/view_line"/>
+
+    <TextView
+        android:id="@+id/tvDriverName"
+        style="@style/TextView_style_d"
+        android:text="@string/jhon_smith"
+        android:layout_below="@id/view_line"
+        android:layout_margin="20dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_phone_receiver"
+        android:layout_below="@id/view_line"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="1dp"
+        android:layout_toRightOf="@id/tvDriverName"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@id/tvDriverName"
+        android:id="@+id/view_line2"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/lin_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="@string/accept"
+            android:layout_marginStart="5dp"
+            android:textAllCaps="false"
+            android:background="@color/colorBlack"
+            android:textColor="@color/pure_white"
+            android:layout_below="@id/par_lin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="@string/decline"
+            android:textAllCaps="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/grey"
+            android:textColor="@color/pure_white"
+            android:layout_below="@id/par_lin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

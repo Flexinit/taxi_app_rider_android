@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_payment_success_fail"
+            style="@style/TextView.Black.Big.Bold"
+            android:layout_gravity="center"
+            android:text="@string/payment_failed" />
+
+        <TextView
+            android:id="@+id/tv_reference_payment"
+            style="@style/TextView.Black.Medium"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/payment_reference" />
+
+        <Space style="@style/SpaceMini" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button.Black"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/try_again_with_other_method" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_padding_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.Black.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="@string/bank_name" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            style="@style/TextView.Black.Small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/bank_name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.Black.Small.Bold"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="@string/reference" />
+
+        <TextView
+            android:id="@+id/tv_reference_payment"
+            style="@style/TextView.Black.Small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/bank_name" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_otp_view"
+        style="@style/TextView.Black.Small"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:gravity="center"
+        android:text="@string/enter_otp" />
+
+    <EditText
+        android:id="@+id/et_otp_code"
+        style="@style/EditTextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:hint="@string/enter_otp_hint"
+        android:imeOptions="actionDone"
+        android:inputType="numberSigned"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Button.Black"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:minHeight="32dp"
+        android:text="@string/submit" />
+
+
+</LinearLayout>

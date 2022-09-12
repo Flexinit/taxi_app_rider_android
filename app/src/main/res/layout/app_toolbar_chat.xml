@@ -1,0 +1,62 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlack">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profileToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentInsetStart="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/im_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_nav"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/im_driver_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+
+                    android:padding="5dp"
+
+                    android:src="@drawable/ic_account"
+                    app:layout_constraintStart_toEndOf="@id/im_back" />
+
+                <TextView
+                    android:id="@+id/tv_driver_name"
+                    style="@style/TextView.White.Big.Bold"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="10dp"
+                    android:text="@string/jhon_smith_name"
+                    android:textAlignment="center"
+                    app:layout_constraintStart_toEndOf="@id/im_driver_profile" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_call"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_phone_receiver_white"
+                    app:civ_border_width="1dp"
+
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</merge>

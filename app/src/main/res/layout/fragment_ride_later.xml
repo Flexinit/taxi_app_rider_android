@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corners_white_view"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/elevation_normal">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.ui.ride.RideLater">
+
+
+        <LinearLayout
+            android:id="@+id/rel_ride_later"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etPickupTime"
+                style="@style/TextView_style_d"
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:hint="@string/pick_up_time"
+                android:inputType="datetime" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_amount_here" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/baseFare"
+                style="@style/TextView_style_d"
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:drawableStart="@drawable/ic_nigeria_naira_currency_symbol"
+                android:drawableLeft="@drawable/ic_nigeria_naira_currency_symbol"
+                android:drawablePadding="10dp"
+                android:hint="@string/base_fare"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/bt_Confirm_booking"
+                style="@style/Black_Button"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:text="@string/confirm_booking" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

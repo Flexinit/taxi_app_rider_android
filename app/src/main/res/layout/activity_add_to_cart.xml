@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/african_drupp_pattern"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_checkout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/light_grey"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--<androidx.viewpager.widget.ViewPager-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@id/ll_cart_price" />-->
+
+            <ImageView
+                android:id="@+id/dummy_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/whit_shoe" />
+
+            <LinearLayout
+                android:id="@+id/ll_cart_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dummy_image">
+
+                <TextView
+                    style="@style/TextView.Grey.Small.Bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/price" />
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/dummy_price" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_made_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_cart_price">
+
+                <TextView
+                    style="@style/TextView.Grey.Small.Bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/made_in" />
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/dummy_country" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_seller_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_made_in">
+
+                <TextView
+                    style="@style/TextView.Grey.Small.Bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/contact_seller"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/dummy_country_seller" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Space style="@style/SpaceMini" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pure_white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:text="@string/select"
+                android:textAllCaps="true" />
+
+            <TextView
+                style="@style/TextView.Black.Mini"
+                android:text="@string/free_shipping_for_indore"
+                android:textAllCaps="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:text="@string/size"
+                    android:textAllCaps="true" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/small" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/medium" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:text="@string/color"
+                    android:textAllCaps="true" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blue"
+                        android:textAllCaps="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/red"
+                        android:textAllCaps="true" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView.Black.Small"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:text="@string/size" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space style="@style/SpaceMini" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pure_white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextView.Black.Small"
+                android:text="@string/delivery" />
+
+            <TextView
+                style="@style/TextView.Black.Mini"
+                android:text="@string/free_shipping_for_indore"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <Space style="@style/SpaceMini" />
+
+        <Button
+            style="@style/Button.Black"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:text="@string/add_to_cart" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

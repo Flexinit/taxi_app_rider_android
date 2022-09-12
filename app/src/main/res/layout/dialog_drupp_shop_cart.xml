@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_header"
+        style="@style/TextView.Black.Medium.Bold"
+        android:gravity="center"
+        android:text="@string/remove_product" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextView.Black.Medium"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:text="@string/are_you_sure_you_want_to_remove" />
+
+    <Space style="@style/SpaceMiniTrim" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/Black_Button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/remove" />
+
+        <Space
+            style="@style/SpaceMiniTrim"
+            android:layout_width="10dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Black_Button"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:background="@color/white"
+    app:cardCornerRadius="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_notification_time"
+            style="@style/TextView.Grey.Mini"
+            android:layout_below="@id/tv_notification_content"
+            android:layout_margin="5dp"
+            android:text="@string/_1_hour_ago"
+            android:textColor="#1DCF9F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_notification_content"
+            style="@style/TextView.Black.Medium"
+            android:layout_margin="5dp"
+            android:text="@string/notificatio_content"
+            android:textSize="15sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

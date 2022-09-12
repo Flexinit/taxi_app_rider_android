@@ -1,0 +1,34 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sachinvarma.easylocation"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:4:3-78
+11-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:4:20-76
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:5:3-76
+12-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:5:20-74
+13
+14    <application>
+14-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:6:3-14:17
+15        <activity
+15-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:9:5-11:39
+16            android:name="com.sachinvarma.easylocation.EasyLocation"
+16-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:11:9-37
+17            android:theme="@style/Theme.Transparent" />
+17-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:10:9-49
+18
+19        <service android:name="com.sachinvarma.easylocation.EasyLocationService" />
+19-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:13:5-79
+19-->/home/flix/AndroidStudioProjects/drupp-android-rider/app/libs/easylocation/src/main/AndroidManifest.xml:13:14-77
+20    </application>
+21
+22</manifest>

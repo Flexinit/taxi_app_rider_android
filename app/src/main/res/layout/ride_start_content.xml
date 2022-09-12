@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:visibility="visible">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_otp_header"
+            style="@style/TextView_style_d"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorRedRider"
+            android:gravity="center"
+            android:text="@string/cab_confirmed"
+            android:textAlignment="center"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_margin_10"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@id/container_driver"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_otp_header">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_driver_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_profile" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_margin_10"
+                android:layout_marginTop="@dimen/activity_margin_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_driver_car_model"
+                    style="@style/TextView.Black.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLength="@integer/full_name_max_length"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    tools:text="@string/dummy_name" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_margin_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_driver_name"
+                        style="@style/TextView.Black.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp"
+                        tools:text="@string/dummy_name" />
+
+                    <TextView
+                        android:id="@+id/tv_driver_rating"
+                        style="@style/TextView.Black.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="@dimen/margin_large"
+                        android:drawableStart="@drawable/ic_star_yellow"
+                        android:drawablePadding="@dimen/activity_margin_2"
+                        android:textSize="12sp"
+                        tools:text="@string/dummy_name" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/trip_Count"
+                    style="@style/TextView.Black.Mini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12sp"
+                    tools:text="" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin_10"
+            android:layout_marginEnd="@dimen/activity_margin_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_otp_header">
+
+            <TextView
+                android:id="@+id/tv_driver_car_number"
+                style="@style/TextView.Black.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:textAlignment="viewEnd"
+                android:textSize="13sp"
+                tools:text="@string/dummy_name" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_vehicle_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_car_right" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_min_height"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorLightGrey"
+            app:layout_constraintTop_toBottomOf="@id/container_driver" />
+
+        <LinearLayout
+            android:id="@+id/container_action"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_1"
+            tools:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_ride_on_way"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_cancel_ride"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/cancel_ride"
+                    android:textColor="@color/colorRed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_chat"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="@dimen/padding_medium"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_call"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_chat" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_call"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="@dimen/padding_medium"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_phone" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_ride_started"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/container_rate_review"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_xx_large"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/container_share"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/btn_rate"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:padding="@dimen/padding_medium"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/rate" />
+
+                    <TextView
+                        style="@style/TextView.Black.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/rate" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/container_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/container_rate_review"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageButton
+                        android:id="@+id/btn_share_eta"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:padding="@dimen/padding_medium"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_share" />
+
+                    <TextView
+                        style="@style/TextView.Black.Mini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/share_eta" />
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_min_height"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@color/colorLightGrey"
+            app:layout_constraintTop_toBottomOf="@id/container_action" />
+
+
+        <TextView
+            android:id="@+id/tv_estimated_fare"
+            style="@style/TextView.Black.Mini"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_2"
+            tools:text="@string/driver_type" />
+
+        <LinearLayout
+            android:id="@+id/container_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/activity_margin_10"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_estimated_fare">
+
+            <ImageView
+                android:id="@+id/iv_payment_method"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_cash" />
+
+            <TextView
+                android:id="@+id/tv_payment_method"
+                style="@style/TextView.Black.Mini"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/activity_margin_5"
+                android:layout_weight="1"
+                android:text="@string/cash"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_right_arrow" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

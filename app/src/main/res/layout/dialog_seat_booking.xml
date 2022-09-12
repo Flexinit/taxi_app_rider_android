@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_border_container"
+    android:minWidth="320dp"
+    android:minHeight="180dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/spinner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_width="0dp"
+                android:layout_weight="0.40"
+                android:text="@string/extra_seats" />
+
+            <Spinner
+                android:id="@+id/spinner_seats"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/TextView.Red.Small"
+            android:text="@string/max_4_seats" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <TextView
+            style="@style/TextView.Black.Small.Bold"
+            android:text="@string/passengers" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <TextView
+            android:id="@+id/tv_default_passenger"
+            style="@style/TextView.Grey.Small"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext_bordered"
+            android:text="@string/dummy_name" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <EditText
+            android:id="@+id/et_name_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bordered"
+            android:hint="@string/name_1"
+            android:visibility="gone" />
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <EditText
+            android:id="@+id/et_name_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bordered"
+            android:hint="@string/name_2"
+            android:visibility="gone" />
+
+
+        <Space style="@style/SpaceMiniTrim" />
+
+        <Button
+            android:id="@+id/btn_book_ride"
+            style="@style/Button.Black"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="20dp"
+            android:minWidth="128dp"
+            android:minHeight="32dp"
+            android:text="@string/book_ride" />
+    </LinearLayout>
+
+
+</LinearLayout>

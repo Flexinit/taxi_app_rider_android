@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/drupp_logo_black" />
+
+    <TextView
+        android:id="@+id/tvRide_for"
+        style="@style/TextView.Black.Medium"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:maxLines="2"
+        android:text="@string/ride_for_abuja"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_margin_10"
+        android:showDividers="beginning|middle|end"
+        android:stretchColumns="0.5,2">
+
+        <View
+            android:layout_height="@dimen/separator_min_height"
+            android:background="@color/colorSeparator" />
+
+        <TableRow
+            android:divider="@drawable/table_divider"
+            android:showDividers="middle">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:padding="5dp"
+                android:text="@string/_date" />
+
+            <TextView
+                android:id="@+id/tvdate"
+                style="@style/TextView.Black.Small"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_weight="1"
+                android:padding="5dp"
+                tools:text="@string/name" />
+        </TableRow>
+
+        <View
+            android:layout_height="@dimen/separator_min_height"
+            android:background="@color/colorSeparator" />
+
+        <TableRow
+            android:divider="@drawable/table_divider"
+            android:showDividers="middle">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:padding="5dp"
+                android:text="@string/from" />
+
+
+            <TextView
+                android:id="@+id/tvSourcePlace"
+                style="@style/TextView.Black.Small"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="@string/indore" />
+        </TableRow>
+
+        <View
+            android:layout_height="@dimen/separator_min_height"
+            android:background="@color/colorSeparator" />
+
+        <TableRow
+            android:divider="@drawable/table_divider"
+            android:showDividers="middle">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/margin_large"
+                android:padding="5dp"
+                android:text="@string/to" />
+
+            <TextView
+                android:id="@+id/tvDestinationPlace"
+                style="@style/TextView.Black.Small"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:padding="5dp"
+                tools:text="@string/dewas" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="@dimen/separator_min_height"
+            android:background="@color/colorSeparator" />
+
+        <TableRow
+            android:divider="@drawable/table_divider"
+            android:showDividers="middle">
+
+            <TextView
+                style="@style/TextView.Black.Small.Bold"
+                android:layout_column="1"
+                android:layout_marginStart="@dimen/margin_large"
+                android:padding="5dp"
+                android:text="@string/fare" />
+
+            <TextView
+                android:id="@+id/tvBillAmount"
+                style="@style/TextView.Black.Small"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_weight="1"
+                android:padding="5dp"
+                tools:text="@string/fare_pop_up" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="@dimen/separator_min_height"
+            android:background="@color/colorSeparator" />
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/rideAlert_view"
+        style="@style/Black_Button"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/activity_margin_10"
+        android:text="@string/view" />
+</LinearLayout>

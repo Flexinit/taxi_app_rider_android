@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:1-13:12
+	package
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:2:5-51
+	xmlns:android
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:7:5-47
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:7:5-47
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:7:5-47
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:7:5-47
+INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:7:5-47
+	android:targetSdkVersion
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:7:15-44
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+		ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:7:5-47
+		INJECTED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml
+application
+ADDED from /home/flix/AndroidStudioProjects/drupp-android-rider/library/src/main/AndroidManifest.xml:9:5-11:19
